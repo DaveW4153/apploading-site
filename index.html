@@ -250,7 +250,23 @@ nav{
 }
 .hero-text{min-width:0}
 .hero-visual{flex:none;width:400px}
-.hero-visual svg{width:100%;height:auto;display:block}
+
+.signal-feed{
+  background:rgba(6,13,26,.5);border:1px solid var(--border);border-radius:8px;
+  padding:20px 22px;backdrop-filter:blur(8px);
+}
+.signal-hd{
+  display:flex;align-items:center;gap:9px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border);
+}
+.signal-line{
+  display:flex;flex-direction:column;gap:3px;
+  padding:11px 0;border-bottom:1px solid var(--border);
+}
+.signal-line:last-child{border-bottom:none;padding-bottom:0}
+.signal-tag{font-family:var(--mono);font-size:10px;letter-spacing:.05em;color:var(--cyan)}
+.signal-stat{font-family:var(--syne);font-size:14px;font-weight:600;color:#fff;letter-spacing:-.01em}
 
 .hero-pill{
   display:inline-flex;align-items:center;gap:9px;
@@ -830,23 +846,15 @@ footer a:hover{color:var(--cyan)}
     </div>
 
     <div class="hero-visual r d2" aria-hidden="true">
-      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
-        <line x1="150" y1="360" x2="200" y2="310" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="200" y1="290" x2="250" y2="240" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="250" y1="220" x2="300" y2="170" stroke="rgba(0,229,255,0.3)" stroke-width="1" stroke-dasharray="3 5"/>
-
-        <rect x="30" y="330" width="220" height="52" rx="8" fill="#060D1A" stroke="rgba(255,255,255,0.08)"/>
-        <text x="52" y="362" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1" fill="#5A7090">INFRA</text>
-
-        <rect x="80" y="260" width="220" height="52" rx="8" fill="#060D1A" stroke="rgba(255,255,255,0.08)"/>
-        <text x="102" y="292" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1" fill="#5A7090">DATABASE</text>
-
-        <rect x="130" y="190" width="220" height="52" rx="8" fill="#091220" stroke="rgba(0,229,255,0.25)"/>
-        <text x="152" y="222" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1" fill="#00E5FF">API LAYER</text>
-
-        <rect x="180" y="120" width="220" height="52" rx="8" fill="#091220" stroke="#00E5FF" stroke-width="1.5"/>
-        <text x="202" y="152" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1" fill="#ffffff">YOUR PRODUCT</text>
-      </svg>
+      <div class="signal-feed">
+        <div class="signal-hd"><span class="pulse"></span>Live systems</div>
+        <div class="signal-line"><span class="signal-tag">Data quality engine</span><span class="signal-stat">171,000 issues caught pre go-live</span></div>
+        <div class="signal-line"><span class="signal-tag">BuildTrack</span><span class="signal-stat">9-stage pipeline · R50k–R250k+ orders</span></div>
+        <div class="signal-line"><span class="signal-tag">LoadKit</span><span class="signal-stat">675 swimmers · 15 countries</span></div>
+        <div class="signal-line"><span class="signal-tag">Ocean-swim operations platform</span><span class="signal-stat">Live since July 2026</span></div>
+        <div class="signal-line"><span class="signal-tag">Consulting operations platform</span><span class="signal-stat">51 tables · 14 modules</span></div>
+        <div class="signal-line"><span class="signal-tag">Website rebuild</span><span class="signal-stat">schema.org + llms.txt shipped</span></div>
+      </div>
     </div>
   </div>
 

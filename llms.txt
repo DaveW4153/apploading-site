@@ -1,0 +1,24 @@
+# apploading.co
+
+> Software built and run in production by one Cape Town-based engineer. Two productized platforms, plus a track record of custom builds for data, operations, and consumer products. Solo builder — no agency, no account managers.
+
+## Products
+
+- **BuildTrack**: customer-facing order tracking and production-management platform for make-to-order businesses (furniture, kitchens, pools, bespoke manufacturing). Magic-link customer portal, nine-stage build timeline, photo approval workflow, real-time financials, QR-code field uploads. Live in 4–6 weeks. Setup R80,000–R120,000, retainer R6,000–R10,000/month.
+- **LoadKit**: white-label community and activity-logging platform for clubs and associations (running, cycling, surf, dive, open-water swimming). Location-based logging, group events with safety gates, challenges and leaderboards, push notifications, sponsor placements. Live in two weeks. Setup R25,000–R60,000, retainer R3,000–R8,000/month.
+
+Prices are quoted in South African Rand (ZAR). Invoicing in USD/EUR is available for international clients.
+
+## Proof of work (anonymized case studies — client names withheld by agreement)
+
+- Data quality engine: 55 rules run daily against live SAP master data for an enterprise S/4HANA migration, 171,000 issues caught before go-live, GPT-powered root-cause reporting.
+- BuildTrack reference deployment: running for a Cape Town wellness-equipment manufacturer, R50,000–R250,000+ custom orders, support calls during the build phase dropped to zero.
+- LoadKit reference deployment (SwimLoading): an open-water swimming community platform live across 15 countries and 3 clubs on one codebase.
+- Ocean-swim operations platform (SwimOps): real-time boat/crew/mission coordination with safety-critical incident tracking and live family tracking for long-distance swims — position vs. planned route, pace, stroke rate and water temperature. Live since July 2026.
+- Consulting operations platform: a 14-module internal operations system (timesheets, projects, leave, expenses, skills, staffing) for a consulting firm — 53 page routes, 44 API endpoints, 51 database tables.
+- Website rebuild: migrated a professional-services firm's public site from WordPress to Next.js with schema.org markup and an llms.txt file — the same approach used on this page.
+- Investment intelligence platform (private beta): an equity-market valuation system combining market data, historical PE ranges back to 1960, forward earnings expectations and analyst consensus into one evidence-based system. 3,200 PE observations across 4 indices. Currently in private access with domain experts, ahead of a licensed live market-data integration.
+
+## Contact
+
+dave@apploading.co — Cape Town, South Africa. Response time: same business day.

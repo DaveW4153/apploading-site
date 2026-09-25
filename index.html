@@ -6,12 +6,16 @@
 <title>Custom software developer, Cape Town | apploading.co</title>
 <meta name="description" content="Cape Town software developer. Two ready platforms, BuildTrack for order tracking and LoadKit for clubs, plus custom builds shipped in weeks.">
 <meta property="og:title" content="Custom software developer, Cape Town | apploading.co">
-<meta property="og:description" content="Two platforms ready to deploy in weeks. Six production systems built and running, one in private beta. One Cape Town-based engineer.">
+<meta property="og:description" content="Two platforms ready to deploy in weeks. Seven production systems built and running, one in private beta. One Cape Town-based engineer.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.apploading.co">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://www.apploading.co/">
 <meta name="theme-color" content="#03080F">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +30,7 @@
       "@id": "https://www.apploading.co/#org",
       "name": "apploading.co",
       "url": "https://www.apploading.co",
+      "logo": "https://www.apploading.co/icon-192.png",
       "email": "dave@apploading.co",
       "address": { "@type": "PostalAddress", "addressLocality": "Cape Town", "addressCountry": "ZA" },
       "description": "Production software built and run by one Cape Town-based engineer: two productized platforms (BuildTrack, LoadKit) plus custom builds for data, operations and consumer products.",
@@ -874,7 +879,7 @@ footer a:hover{color:var(--cyan)}
         <div class="signal-line"><span class="signal-tag">LoadKit</span><span class="signal-stat">675 swimmers · 15 countries</span></div>
         <div class="signal-line"><span class="signal-tag">Ocean-swim operations platform</span><span class="signal-stat">Live since July 2026</span></div>
         <div class="signal-line"><span class="signal-tag">Consulting operations platform</span><span class="signal-stat">51 tables · 14 modules</span></div>
-        <div class="signal-line"><span class="signal-tag">Website rebuild</span><span class="signal-stat">schema.org + llms.txt shipped</span></div>
+        <div class="signal-line"><span class="signal-tag">Observer Hub</span><span class="signal-stat">Swim evidence sealed at the finish</span></div>
       </div>
     </div>
   </div>
@@ -1001,7 +1006,7 @@ footer a:hover{color:var(--cyan)}
             <li>Challenges, leaderboards, streak badges</li>
             <li>Push notifications, hazard reporting</li>
             <li>Sponsor placements that offset your monthly cost</li>
-            <li>Proven multi-club architecture on one codebase</li>
+            <li>Open-water and pool-squad clubs on one codebase: coaches, attendance, parent links</li>
           </ul>
           <div class="platform-proof">The reference deployment serves an open-water swimming community across <strong>15 countries</strong> and multiple clubs, including one with <strong>550+ active members</strong>, on a single shared platform.</div>
           <div class="platform-price">
@@ -1059,7 +1064,7 @@ footer a:hover{color:var(--cyan)}
 <!-- WORK -->
 <div id="work" class="work-hd r">
   <div class="sec-label">Proof of work</div>
-  <h2>Six in production. One in the lab.</h2>
+  <h2>Seven in production. One in the lab.</h2>
 </div>
 
 <div class="projects">
@@ -1142,7 +1147,7 @@ footer a:hover{color:var(--cyan)}
       <h3 class="proj-title">One codebase,<br><em>three clubs, 15 countries.</em></h3>
       <div class="case-block">
         <div class="case-row"><span class="case-label">Problem</span><p class="case-text">Open water swimmers in South Africa had no shared source for real-time water conditions or hazards, and no way to coordinate group swims or prove a qualifying crossing actually happened.</p></div>
-        <div class="case-row"><span class="case-label">Built</span><p class="case-text">LoadKit, running as SwimLoading. Live conditions, GPS swim logging, group coordination, challenges and leaderboards, and an Evidence Tracker that captures qualifying-swim data (duration, water temp, GPS, observer contact) the moment it's logged, instead of an observer reconstructing it by hand afterward.</p></div>
+        <div class="case-row"><span class="case-label">Built</span><p class="case-text">LoadKit, running as SwimLoading. Live conditions, GPS swim logging, group coordination, challenges and leaderboards, and an Evidence Tracker that captures qualifying-swim data (duration, water temp, GPS, observer contact) the moment it's logged, instead of an observer reconstructing it by hand afterward. The club side runs two very different kinds of club from one codebase: an adult open-water club with league racing, and pool squads with coaches, attendance and parents, including a foundation-funded learn-to-swim programme that reports progress straight to its funder.</p></div>
         <div class="case-row"><span class="case-label">Result</span><p class="case-text"><strong>Self-funded. Zero marketing. Built and grown solo.</strong> Maurten sponsorship followed.</p></div>
       </div>
       <div class="proj-quote">
@@ -2614,9 +2619,43 @@ footer a:hover{color:var(--cyan)}
     </div>
   </div>
 
-  <!-- 07: Investment intelligence platform (early access) -->
+  <!-- 07: Observer Hub -->
   <div class="proj r">
     <div class="proj-n">07</div>
+    <div>
+      <div class="proj-type">Observer Hub · swim ratification platform</div>
+      <h3 class="proj-title">Evidence sealed<br><em>the moment the swim ends.</em></h3>
+      <div class="case-block">
+        <div class="case-row"><span class="case-label">Problem</span><p class="case-text">Ratifying a long-distance swim depends on what one observer saw, usually written up by hand after the swim, then reviewed by a body that has to take it largely on trust.</p></div>
+        <div class="case-row"><span class="case-label">Built</span><p class="case-text">Observer Hub: an offline-first capture app the observer opens from a link on the boat (check-ins, feeds, attire, incidents, each timestamped and GPS-tagged), plus a review hub where the ratifying body queries the observer, records its decision and issues the certificate.</p></div>
+        <div class="case-row"><span class="case-label">Result</span><p class="case-text"><strong>No write-up after the swim.</strong> Evidence is assembled and SHA-256 sealed the moment capture ends, and nothing in it can be quietly edited: a correction is a new version with a reason.</p></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-hd">From the water to a decision</div>
+      <div class="flow-diagram">
+        <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Capture</span></div>
+        <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Evidence</span></div>
+        <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Sealed</span></div>
+        <div class="flow-step"><span class="flow-dot active"></span><span class="flow-label">Decision</span></div>
+      </div>
+      <div class="metric-grid">
+        <div class="mc"><div class="mc-n c" data-count="26">26</div><div class="mc-l">Database tables</div></div>
+        <div class="mc"><div class="mc-n" data-count="8">8</div><div class="mc-l">Days, first commit to current release</div></div>
+        <div class="mc"><div class="mc-n c">SHA-256</div><div class="mc-l">Sealed evidence packages</div></div>
+        <div class="mc"><div class="mc-n">Offline</div><div class="mc-l">Captures with no signal at sea</div></div>
+      </div>
+      <div class="panel-tags">
+        <span class="ptag">Next.js 16</span><span class="ptag">Supabase</span>
+        <span class="ptag">Offline PWA</span><span class="ptag">Automated tests</span>
+      </div>
+      <div class="panel-note">Live at <a href="https://observerhub.vercel.app" target="_blank" rel="noopener" style="color:var(--cyan)">observerhub.vercel.app</a> · append-only audit log · first ratifying body configured</div>
+    </div>
+  </div>
+
+  <!-- 08: Investment intelligence platform (early access) -->
+  <div class="proj r">
+    <div class="proj-n">08</div>
     <div>
       <div class="proj-type">Investment intelligence · private beta</div>
       <h3 class="proj-title">Turning decades of<br><em>investment judgment into a system.</em></h3>

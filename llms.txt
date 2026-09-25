@@ -17,10 +17,11 @@ Dave Welensky works as a forward deployed engineer: embedded with the client rat
 
 - Data quality engine: 55 rules run daily against live SAP master data for an enterprise S/4HANA migration. 171,000 issues caught before go-live, with GPT-powered root-cause reporting.
 - BuildTrack reference deployment: running for a Cape Town wellness-equipment manufacturer. R50,000-R250,000+ custom orders; support calls during the build phase dropped to zero.
-- LoadKit reference deployment (SwimLoading, swimloading.com): an open-water swimming community platform with 675 swimmers across 15 countries and 3 clubs on one codebase.
+- LoadKit reference deployment (SwimLoading, swimloading.com): an open-water swimming community platform with 675 swimmers across 15 countries and 3 clubs on one codebase. The club side runs an adult open-water club with league racing and pool squads with coaches, attendance and parents, including a foundation-funded learn-to-swim programme that reports progress to its funder.
 - Ocean-swim operations platform: real-time boat, crew and mission coordination with safety-critical incident tracking, plus live family tracking for long-distance swims (position against planned route, pace, stroke rate, water temperature). Live since July 2026.
 - Consulting operations platform: a 14-module internal operations system (timesheets, projects, leave, expenses, skills, staffing) for a consulting firm. 53 page routes, 44 API endpoints, 51 database tables.
 - Website rebuild: migrated a professional-services firm's public site from WordPress to Next.js with schema.org markup and an llms.txt file, the same approach used on this site.
+- Observer Hub (observerhub.vercel.app): a swim ratification platform. Observers capture evidence offline on the boat (check-ins, feeds, attire, incidents, timestamped and GPS-tagged); the evidence is assembled and SHA-256 sealed the moment capture ends; the ratifying body reviews, queries, decides and issues certificates on an append-only record. 26 database tables, built in 8 days.
 - Investment intelligence platform (private beta): an equity-market valuation system combining market data, historical PE ranges back to 1960, forward earnings expectations and analyst consensus. 3,200 PE observations across 4 indices.
 
 ## Key pages

@@ -29,7 +29,7 @@
       "email": "dave@apploading.co",
       "address": { "@type": "PostalAddress", "addressLocality": "Cape Town", "addressCountry": "ZA" },
       "description": "Production software built and run by one Cape Town-based engineer: two productized platforms (BuildTrack, LoadKit) plus custom builds for data, operations and consumer products.",
-      "founder": { "@type": "Person", "name": "Dave Welensky" },
+      "founder": { "@type": "Person", "name": "Dave Welensky", "jobTitle": "Forward Deployed Engineer", "knowsAbout": ["Forward deployed engineering", "Python", "TypeScript", "Next.js", "Supabase", "SAP S/4HANA data quality", "LLM integration"] },
       "sameAs": ["https://swimloading.com"]
     },
     {
@@ -81,6 +81,11 @@
           "@type": "Question",
           "name": "Do you work with clients outside South Africa?",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cape Town-based and remote-first, with a same business day response time." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a forward deployed engineer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An engineer who works inside your business rather than at a distance: scoping the real problem with your team, building production code against your own systems and data, hardening it for daily use, and staying on after go-live. It is how apploading.co works on every client project." }
         }
       ]
     }
@@ -670,6 +675,19 @@ nav{
 .faq-a{font-size:15px;color:var(--muted2);line-height:1.8;max-width:68ch}
 .faq-a strong{color:var(--text);font-weight:400}
 
+/* ── FORWARD DEPLOYED ─────────────────────────── */
+.fde{padding:96px 40px;border-bottom:1px solid var(--border)}
+.fde-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:220px 1fr;gap:80px;align-items:start}
+.fde-intro{font-size:16px;color:var(--muted2);line-height:1.85;max-width:64ch;margin-bottom:44px}
+.fde-intro strong{color:var(--text);font-weight:400}
+.fde-steps{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.fde-step{padding:26px 0;border-top:1px solid var(--border)}
+.fde-n{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--cyan);margin-bottom:10px}
+.fde-title{font-family:var(--syne);font-size:20px;font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:10px}
+.fde-text{font-size:15px;color:var(--muted2);line-height:1.75;margin-bottom:14px}
+.fde-proof{font-size:14px;color:var(--text);line-height:1.65;padding-left:14px;border-left:2px solid var(--cyan-b)}
+.fde-proof span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+
 /* ── ABOUT ────────────────────────────────────── */
 .about{
   padding:96px 40px;border-bottom:1px solid var(--border);
@@ -796,6 +814,9 @@ footer a:hover{color:var(--cyan)}
   .projects{padding:16px 20px 0}
   .proj{grid-template-columns:1fr;gap:24px}
   .proj-n{display:none}
+  .fde{padding:64px 20px}
+  .fde-grid{grid-template-columns:1fr;gap:20px}
+  .fde-steps{grid-template-columns:1fr}
   .faq{padding:64px 20px}
   .faq-grid{grid-template-columns:1fr;gap:20px}
   .about{padding:64px 20px}
@@ -923,7 +944,7 @@ footer a:hover{color:var(--cyan)}
         <div class="contrast-row"><span class="contrast-old">Agency quote</span><span class="contrast-arrow">→</span><span class="contrast-new">Fixed price</span></div>
         <div class="contrast-row"><span class="contrast-old">Black box</span><span class="contrast-arrow">→</span><span class="contrast-new">Traceable code</span></div>
         <div class="contrast-row"><span class="contrast-old">Months of build</span><span class="contrast-arrow">→</span><span class="contrast-new">Weeks to live</span></div>
-        <div class="contrast-row"><span class="contrast-old">Demo</span><span class="contrast-arrow">→</span><span class="contrast-new">Deployed</span></div>
+        <div class="contrast-row"><span class="contrast-old">Consultant's report</span><span class="contrast-arrow">→</span><span class="contrast-new">Production code</span></div>
         <div class="contrast-row"><span class="contrast-old">Handoff</span><span class="contrast-arrow">→</span><span class="contrast-new">Direct line</span></div>
         <div class="contrast-row"><span class="contrast-old">Unproven pitch</span><span class="contrast-arrow">→</span><span class="contrast-new">Live reference</span></div>
       </div>
@@ -993,6 +1014,43 @@ footer a:hover{color:var(--cyan)}
           <a href="mailto:dave@apploading.co?subject=LoadKit%20enquiry" class="btn-primary platform-cta">Ask about LoadKit →</a>
         </div>
 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW I WORK: forward deployed -->
+<section id="how" class="fde">
+  <div class="fde-grid">
+    <div class="sec-label r">How I work</div>
+    <div>
+      <h2 class="pitch-hed r d1">Forward deployed.<br><em>Inside your business, not beside it.</em></h2>
+      <p class="r d2 fde-intro">A forward deployed engineer works where the problem lives: with your team, in your systems, on your real data. Not a consultant who recommends and leaves, and not a developer building from a spec in isolation. <strong>It's how I work on every client project.</strong></p>
+      <div class="fde-steps">
+        <div class="fde-step r d2">
+          <div class="fde-n">01</div>
+          <h3 class="fde-title">Scope the real problem</h3>
+          <p class="fde-text">Requirements usually arrive vague. I sit with the people doing the work and find what's actually broken before writing any code.</p>
+          <p class="fde-proof"><span>Proof</span>An SAP migration brief to "clean up the data" became 55 specific, testable rules.</p>
+        </div>
+        <div class="fde-step r d3">
+          <div class="fde-n">02</div>
+          <h3 class="fde-title">Build inside your systems</h3>
+          <p class="fde-text">Production code in your environment, against your data and the tools you already use. Not a demo running on my laptop.</p>
+          <p class="fde-proof"><span>Proof</span>BuildTrack pulls stage and ETA straight from a manufacturer's existing Monday.com ops board.</p>
+        </div>
+        <div class="fde-step r d3">
+          <div class="fde-n">03</div>
+          <h3 class="fde-title">Harden it for real conditions</h3>
+          <p class="fde-text">Access control, audit logs, alerts, and interfaces built for how the work actually happens, not how it looks in a meeting.</p>
+          <p class="fde-proof"><span>Proof</span>No-login check-ins from a moving boat, and automatic alerts if a boat goes quiet mid-mission.</p>
+        </div>
+        <div class="fde-step r d4">
+          <div class="fde-n">04</div>
+          <h3 class="fde-title">Stay after go-live</h3>
+          <p class="fde-text">I run it, fix it and keep improving it. What I learn in the field goes back into the product.</p>
+          <p class="fde-proof"><span>Proof</span>Improvements built for one BuildTrack or LoadKit client ship to every client on the platform.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -2617,6 +2675,10 @@ footer a:hover{color:var(--cyan)}
         <div class="faq-q">Do you work with clients outside South Africa?</div>
         <div class="faq-a">Yes. Cape Town-based, remote-first. Happy to work across time zones; response time is same business day.</div>
       </div>
+      <div class="faq-item r">
+        <div class="faq-q">What is a forward deployed engineer?</div>
+        <div class="faq-a">An engineer who works inside your business rather than at a distance: scoping the real problem with your team, building production code against your own systems and data, hardening it for daily use, and <strong>staying on after go-live</strong>. It's how I work on every client project.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -2638,6 +2700,7 @@ footer a:hover{color:var(--cyan)}
         <span class="stag">Supabase / Postgres</span>
         <span class="stag">SAP S/4HANA</span>
         <span class="stag">Data quality / ETL</span>
+        <span class="stag">LLM integration</span>
         <span class="stag">Data migration</span>
       </div>
     </div>

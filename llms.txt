@@ -9,6 +9,10 @@
 
 Prices are quoted in South African Rand (ZAR). Invoicing in USD/EUR is available for international clients.
 
+## How I work: forward deployed engineering
+
+Dave Welensky works as a forward deployed engineer: embedded with the client rather than at a distance. That means scoping the real problem with the people doing the work, building production code inside the client's own systems and data, hardening it for daily use (access control, audit logs, alerts), and staying on after go-live. Improvements made for one BuildTrack or LoadKit client ship to every client on the platform.
+
 ## Proof of work (anonymized case studies, client names withheld)
 
 - Data quality engine: 55 rules run daily against live SAP master data for an enterprise S/4HANA migration. 171,000 issues caught before go-live, with GPT-powered root-cause reporting.

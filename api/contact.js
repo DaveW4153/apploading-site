@@ -48,7 +48,7 @@ module.exports = async (req, res) => {
 
   const name = oneLine(body.name, 120);
   const email = oneLine(body.email, 200);
-  const need = oneLine(body.need, 60);
+  const business = oneLine(body.business, 120);
   const message = clean(body.message, 4000);
 
   if (!name || !EMAIL.test(email) || message.length < 5) {
@@ -58,7 +58,7 @@ module.exports = async (req, res) => {
   const text = [
     'Name: ' + name,
     'Email: ' + email,
-    need ? 'Looking for: ' + need : null,
+    business ? 'Business: ' + business : null,
     '',
     message
   ].filter(l => l !== null).join('\n');

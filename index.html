@@ -1,1270 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Custom software developer, Cape Town | apploading.co</title>
-<meta name="description" content="Cape Town software developer. Two ready platforms, BuildTrack for order tracking and LoadKit for clubs, plus custom builds shipped in weeks.">
-<meta property="og:title" content="Custom software developer, Cape Town | apploading.co">
-<meta property="og:description" content="Two platforms ready to deploy in weeks. Seven production systems built and running, one in private beta. One Cape Town-based engineer.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.apploading.co">
-<meta name="twitter:card" content="summary">
+<meta name="description" content="I&#x27;m Dave, an independent builder in Cape Town. I build websites, apps and practical tools that take repetitive work off your hands. Tell me what&#x27;s slowing you down.">
 <link rel="canonical" href="https://www.apploading.co/">
+<meta property="og:site_name" content="apploading.co">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_ZA">
+<meta property="og:title" content="Custom software developer, Cape Town | apploading.co">
+<meta property="og:description" content="I&#x27;m Dave, an independent builder in Cape Town. I build websites, apps and practical tools that take repetitive work off your hands. Tell me what&#x27;s slowing you down.">
+<meta property="og:url" content="https://www.apploading.co/">
+<meta property="og:image" content="https://www.apploading.co/assets/img/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="apploading.co: less admin, happier customers, more time to grow your business, shown beside screens from a working guest app.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Custom software developer, Cape Town | apploading.co">
+<meta name="twitter:description" content="I&#x27;m Dave, an independent builder in Cape Town. I build websites, apps and practical tools that take repetitive work off your hands. Tell me what&#x27;s slowing you down.">
+<meta name="twitter:image" content="https://www.apploading.co/assets/img/og-home.jpg">
 <meta name="theme-color" content="#06090F">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link rel="preload" as="image" href="/assets/img/guest-prep-390.webp" imagesrcset="/assets/img/guest-prep-390.webp 390w, /assets/img/guest-prep-780.webp 780w" imagesizes="(min-width:1020px) 230px, 40vw" fetchpriority="high">
+<link rel="stylesheet" href="/assets/css/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "ProfessionalService",
       "@id": "https://www.apploading.co/#org",
       "name": "apploading.co",
-      "url": "https://www.apploading.co",
+      "url": "https://www.apploading.co/",
       "logo": "https://www.apploading.co/icon-192.png",
+      "image": "https://www.apploading.co/assets/img/og-home.jpg",
       "email": "dave@apploading.co",
+      "description": "An independent software developer in Cape Town building websites, apps and practical business tools that take repetitive work off a business and make life easier for its customers.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Cape Town",
         "addressCountry": "ZA"
       },
-      "description": "Production software built and run by one Cape Town-based engineer: two productized platforms (BuildTrack, LoadKit) plus custom builds for data, operations and consumer products.",
       "founder": {
-        "@type": "Person",
-        "name": "Dave Welensky",
-        "jobTitle": "Forward Deployed Engineer",
-        "knowsAbout": [
-          "Forward deployed engineering",
-          "Python",
-          "TypeScript",
-          "Next.js",
-          "Supabase",
-          "SAP S/4HANA data quality",
-          "LLM integration"
-        ]
-      },
-      "sameAs": [
-        "https://swimloading.com"
-      ]
-    },
-    {
-      "@type": "Product",
-      "name": "BuildTrack",
-      "description": "Customer-facing order tracking and production-management platform for make-to-order businesses. Magic-link customer portal, nine-stage build timeline, photo approval workflow, real-time financials, QR-code field uploads.",
-      "brand": {
-        "@type": "Organization",
-        "name": "apploading.co"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "ZAR",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "minPrice": 80000,
-          "maxPrice": 120000,
-          "priceCurrency": "ZAR"
-        }
+        "@id": "https://www.apploading.co/#dave"
       }
     },
     {
-      "@type": "Product",
-      "name": "LoadKit",
-      "description": "White-label community and activity-logging platform for clubs and associations: running, cycling, surf, dive, open-water swimming. Location-based logging, group events with safety gates, challenges and leaderboards.",
-      "brand": {
-        "@type": "Organization",
-        "name": "apploading.co"
+      "@type": "Person",
+      "@id": "https://www.apploading.co/#dave",
+      "name": "Dave Welensky",
+      "jobTitle": "Independent software developer",
+      "worksFor": {
+        "@id": "https://www.apploading.co/#org"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "ZAR",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "minPrice": 25000,
-          "maxPrice": 60000,
-          "priceCurrency": "ZAR"
-        }
-      }
+      "url": "https://www.apploading.co/about/"
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "I only have an idea. Can we start there?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, most projects start that way. Tell me what you want it to do and who it's for, in plain words. I work out what's needed with you, then quote for it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to be technical?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. You describe the problem. I make the technical decisions and explain the ones that matter in plain language."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does it cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "BuildTrack: R80,000-R120,000 setup + R6,000-R10,000 a month. LoadKit: R25,000-R60,000 setup + R3,000-R8,000 a month. Custom builds are quoted after a short call. Prices are in South African Rand; invoicing in USD/EUR is available for international clients."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How fast can we go live?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "LoadKit in two weeks, BuildTrack in 4-6 weeks. Both are set up for you, not built from zero. Custom builds depend on size; most take 2-4 months."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you only build what's on this page?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The two products are ready-made, but most of the work shown here was built to order: data checking, internal operations systems, safety systems for people at sea. If your business needs software that has to work every day, it's in scope."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who actually builds it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "One person: me. No account managers and no handoff between teams. You deal directly with the person doing the work, who still answers six months after launch."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens after launch?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "I stay on. For a monthly fee I run it, fix what breaks and keep improving it, and you can still reach me directly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with clients outside South Africa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. I'm based in Cape Town and work remotely across time zones. I reply the same business day."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a forward deployed engineer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It's the name for how I work: inside your business rather than at a distance. I work out the real problem with your team, build against your own tools and information, make it solid enough for daily use, and stay on after launch."
-          }
-        }
-      ]
+      "@type": "WebSite",
+      "@id": "https://www.apploading.co/#site",
+      "url": "https://www.apploading.co/",
+      "name": "apploading.co",
+      "publisher": {
+        "@id": "https://www.apploading.co/#org"
+      }
     }
   ]
 }
 </script>
-
-
-<script>document.documentElement.classList.add('js')</script>
-
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:104px;-webkit-text-size-adjust:100%}
-
-:root{
-  --bg:      #06090F;
-  --bg2:     #0A0F17;
-  --bg3:     #101722;
-  --ink:     #F4F7FB;
-  --text:    #C9D2DF;
-  --body:    #9AA7B9;
-  --muted:   #77859A;
-  --dim:     #5E6B80;
-  --line:    rgba(255,255,255,.075);
-  --line2:   rgba(255,255,255,.13);
-  --accent:  #4DD9EC;
-  --accent-hi:#8DEBF6;
-  --accent-ink:#03222A;
-  --accent-soft:rgba(77,217,236,.09);
-  --accent-line:rgba(77,217,236,.3);
-  --ok:      #5BD98A;
-  --warn:    #F2B84B;
-  --sans:    'Geist',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --mono:    'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;
-  --wrap:    1200px;
-  --pad:     40px;
-  --sec:     136px;
-  --ease:    cubic-bezier(.2,.7,.2,1);
-}
-
-body{
-  background:var(--bg);
-  color:var(--body);
-  font-family:var(--sans);
-  font-size:16px;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
-  overflow-x:hidden;
-}
-/* film grain: breaks up the flat dark surface */
-body::after{
-  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.045;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-a{color:inherit;text-decoration:none}
-img{max-width:100%}
-h1,h2,h3{text-wrap:balance;color:var(--ink);font-weight:600}
-p{text-wrap:pretty}
-strong{color:var(--text);font-weight:500}
-::selection{background:var(--accent);color:var(--accent-ink)}
-
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
-
-.skip{
-  position:absolute;left:16px;top:-80px;z-index:1000;
-  background:var(--accent);color:var(--accent-ink);font-weight:500;font-size:14px;
-  padding:10px 16px;border-radius:8px;transition:top .2s;
-}
-.skip:focus{top:12px}
-
-.wrap{max-width:calc(var(--wrap) + var(--pad)*2);margin:0 auto;padding:0 var(--pad);width:100%}
-main,footer{position:relative;z-index:2}
-
-/* ── Scroll reveal (only when JS is running) ─── */
-.js .r{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
-.js .r.in{opacity:1;transform:none}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-
-/* ── Shared pieces ──────────────────────────── */
-.eyebrow{
-  display:flex;align-items:center;gap:10px;
-  font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:22px;
-}
-.eyebrow::before{content:'';width:7px;height:7px;background:var(--accent);border-radius:1.5px;flex:none}
-
-/* two-tone headline: the claim in white, the kicker in grey */
-.h2{font-size:clamp(34px,4.5vw,60px);line-height:1.04;letter-spacing:-.04em}
-.h2 em,.case-title em{font-style:normal;color:var(--dim);display:block}
-
-.sec{padding:var(--sec) 0;border-bottom:1px solid var(--line);position:relative}
-.sec-hd{max-width:880px;margin-bottom:64px}
-.sec-hd .h2{margin-bottom:24px}
-.lede{font-size:18px;line-height:1.65;color:var(--body);max-width:60ch}
-
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  font-family:var(--sans);font-size:16px;font-weight:500;line-height:1;
-  color:var(--accent-ink);background:var(--accent);
-  padding:17px 26px;border-radius:12px;border:1px solid transparent;cursor:pointer;
-  white-space:nowrap;
-  transition:background .2s,transform .2s var(--ease),box-shadow .2s,border-color .2s;
-  box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 12px 36px -12px rgba(77,217,236,.6);
-}
-.btn .arr{display:inline-block;transition:transform .25s var(--ease)}
-.btn:hover{background:var(--accent-hi);transform:translateY(-1px)}
-.btn:hover .arr{transform:translateX(4px)}
-.btn:active{transform:translateY(1px)}
-.btn-sm{font-size:14.5px;padding:12px 18px;border-radius:10px}
-.btn-ghost{
-  color:var(--ink);background:rgba(255,255,255,.03);border-color:var(--line2);box-shadow:none;
-}
-.btn-ghost:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.24)}
-
-.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex:none;position:relative;display:inline-block}
-.dot::after{
-  content:'';position:absolute;inset:-4px;border-radius:50%;
-  border:1px solid var(--ok);opacity:0;animation:ping 2.6s var(--ease) infinite;
-}
-.dot.warn{background:var(--warn)}
-.dot.warn::after{border-color:var(--warn)}
-@keyframes ping{0%{transform:scale(.4);opacity:.9}70%,100%{transform:scale(1.5);opacity:0}}
-@keyframes blink{50%{opacity:.3}}
-
-.pill-s{font-family:var(--mono);font-size:11.5px;line-height:1;padding:5px 10px;border-radius:20px;white-space:nowrap;display:inline-flex;align-items:center;gap:7px}
-.pill-s::before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor}
-.pill-s.ok{background:rgba(91,217,138,.09);color:var(--ok);border:1px solid rgba(91,217,138,.26)}
-.pill-s.run{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
-.pill-s.run::before{animation:blink 1.2s ease-in-out infinite}
-.pill-s.flag{background:rgba(242,184,75,.09);color:var(--warn);border:1px solid rgba(242,184,75,.28)}
-
-/* card with a lit top edge */
-.card{
-  position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:20px;overflow:hidden;
-  box-shadow:0 30px 70px -44px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,255,255,.04);
-  transition:border-color .3s;
-}
-.card::after{
-  content:'';position:absolute;top:0;left:12%;right:12%;height:1px;pointer-events:none;
-  background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.45;
-  transition:opacity .3s,left .5s var(--ease),right .5s var(--ease);
-}
-.card:hover{border-color:var(--line2)}
-.card:hover::after{opacity:.9;left:4%;right:4%}
-
-/* ── NAV: floating bar ──────────────────────── */
-.nav{position:fixed;top:14px;left:0;right:0;z-index:500;padding:0 20px;pointer-events:none}
-.nav-inner{
-  pointer-events:auto;position:relative;overflow:hidden;
-  max-width:1240px;margin:0 auto;height:62px;padding:0 10px 0 22px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-  background:rgba(8,12,19,.7);
-  backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);
-  border:1px solid var(--line2);border-radius:18px;
-  box-shadow:0 20px 50px -24px rgba(0,0,0,.8);
-}
-.brand{display:flex;align-items:baseline;gap:12px}
-.logo{font-size:19px;font-weight:600;color:var(--ink);letter-spacing:-.035em}
-.logo span{color:var(--accent)}
-.load{font-family:var(--mono);font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:6ch;transition:color .3s}
-.load.done{color:var(--accent)}
-.nav-links{display:flex;align-items:center;gap:2px}
-.nav-links a:not(.btn){font-size:15px;color:var(--body);padding:9px 13px;border-radius:9px;transition:color .2s,background .2s}
-.nav-links a:not(.btn):hover{color:var(--ink);background:rgba(255,255,255,.05)}
-.nav-links a.on{color:var(--ink)}
-.nav-links .btn{margin-left:12px}
-/* the page "loads" as you scroll */
-.nav-bar{
-  position:absolute;left:0;bottom:0;height:2px;width:100%;
-  background:linear-gradient(90deg,rgba(77,217,236,.2),var(--accent));
-  transform-origin:0 50%;transform:scaleX(0);
-}
-
-/* ── HERO ───────────────────────────────────── */
-.hero{position:relative;padding:164px 0 96px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;pointer-events:none;z-index:0}
-.hero-bg::before{
-  content:'';position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
-  background-size:72px 72px;background-position:50% 0;
-  -webkit-mask-image:radial-gradient(ellipse 75% 60% at 50% 30%,#000 0%,transparent 78%);
-  mask-image:radial-gradient(ellipse 75% 60% at 50% 30%,#000 0%,transparent 78%);
-}
-.hero-bg::after{
-  content:'';position:absolute;left:50%;top:-340px;width:1200px;height:900px;margin-left:-600px;border-radius:50%;
-  background:radial-gradient(ellipse,rgba(77,217,236,.2) 0%,rgba(38,84,190,.09) 40%,transparent 68%);
-  filter:blur(20px);
-  animation:drift 16s ease-in-out infinite alternate;
-}
-@keyframes drift{from{transform:translate(-50px,0) scale(1)}to{transform:translate(50px,40px) scale(1.08)}}
-
-.hero-in{position:relative;z-index:2}
-.hero-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
-.pill{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--mono);font-size:12.5px;color:var(--text);
-  border:1px solid var(--line2);background:rgba(255,255,255,.035);
-  padding:8px 16px 8px 13px;border-radius:40px;margin-bottom:30px;
-}
-.hero-h1{
-  font-size:clamp(38px,4.7vw,68px);
-  font-weight:600;line-height:1.03;letter-spacing:-.045em;
-  margin-bottom:26px;
-}
-.hero-h1 em{
-  font-style:normal;display:block;padding-bottom:.12em;margin-bottom:-.12em;
-  background:linear-gradient(180deg,#EEF2F7 8%,#7B8798 96%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.hero-sub{font-size:clamp(17px,1.4vw,19.5px);line-height:1.6;color:var(--body);max-width:50ch;margin-bottom:28px}
-.hero-points{margin-bottom:30px}
-.hero-points li{font-size:16px;color:var(--text)}
-.hero-meta{font-family:var(--mono);font-size:13.5px;color:var(--muted)}
-.hero-meta a{color:var(--text);border-bottom:1px solid var(--line2);padding-bottom:2px;transition:color .2s,border-color .2s}
-.hero-meta a:hover{color:var(--accent);border-color:var(--accent)}
-
-/* enquiry form */
-.enq{padding:30px 30px 28px;display:flex;flex-direction:column;gap:16px;text-align:left;border-radius:22px;border-color:var(--line2)}
-.enq-title{font-size:25px;letter-spacing:-.035em;line-height:1.15}
-.enq-sub{font-size:14.5px;color:var(--muted);margin-top:-10px}
-.fld{display:flex;flex-direction:column;gap:7px}
-.fld>span,.chips legend{font-size:13.5px;font-weight:500;color:var(--text)}
-.fld input,.fld textarea{
-  font-family:var(--sans);font-size:16px;line-height:1.4;color:var(--ink);width:100%;
-  background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:11px;padding:13px 14px;
-  transition:border-color .2s,background .2s,box-shadow .2s;
-}
-.fld textarea{resize:vertical;min-height:112px;line-height:1.5}
-.fld input::placeholder,.fld textarea::placeholder{color:var(--dim)}
-.fld input:hover,.fld textarea:hover{border-color:rgba(255,255,255,.24)}
-.fld input:focus,.fld textarea:focus{outline:none;border-color:var(--accent);background:rgba(77,217,236,.05);box-shadow:0 0 0 3px rgba(77,217,236,.18)}
-.chips{border:0;min-width:0}
-.chips legend{padding:0;margin-bottom:9px}
-.chip-row{display:flex;flex-wrap:wrap;gap:8px}
-.chip-row label{position:relative;cursor:pointer}
-.chip-row input{position:absolute;opacity:0;pointer-events:none}
-.chip-row span{display:block;font-size:14px;line-height:1.2;color:var(--body);border:1px solid var(--line2);border-radius:20px;padding:8px 14px;transition:color .2s,border-color .2s,background .2s}
-.chip-row label:hover span{color:var(--ink);border-color:rgba(255,255,255,.24)}
-.chip-row input:checked+span{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
-.chip-row input:focus-visible+span{outline:2px solid var(--accent);outline-offset:3px}
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.enq-btn{width:100%}
-.enq-btn:disabled{opacity:.65;cursor:progress;transform:none}
-.enq-status{font-size:14.5px;line-height:1.55;color:var(--muted)}
-.enq-status:empty{display:none}
-.enq-status.ok{color:var(--ok)}
-.enq-status.err{color:var(--warn)}
-.enq-status a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
-
-/* live systems list */
-.console{
-  width:100%;margin-top:84px;text-align:left;
-  background:linear-gradient(180deg,rgba(13,19,29,.92),rgba(8,12,19,.94));
-  border:1px solid var(--line2);border-radius:20px;overflow:hidden;position:relative;
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  box-shadow:0 60px 120px -50px rgba(0,0,0,.95),0 0 90px -30px rgba(77,217,236,.22),inset 0 1px 0 rgba(255,255,255,.07);
-}
-.console::after{
-  content:'';position:absolute;top:0;left:20%;right:20%;height:1px;
-  background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.7;
-}
-.console-bar{
-  display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 22px;border-bottom:1px solid var(--line);
-  font-family:var(--mono);font-size:12.5px;color:var(--muted);
-}
-.console-count{display:flex;align-items:center;gap:10px;color:var(--text);white-space:nowrap}
-.sys{display:flex;flex-direction:column;min-width:0}
-.sys-row{
-  display:grid;grid-template-columns:minmax(0,.7fr) 66px minmax(0,1.3fr) 16px;gap:18px;align-items:center;
-  padding:14px 22px;border-bottom:1px solid var(--line);
-  transition:background .2s;
-}
-.sys-row:last-child{border-bottom:0}
-.sys-row:hover{background:rgba(255,255,255,.035)}
-.sys-row .pill-s{justify-self:start}
-.sys-name{font-size:15.5px;font-weight:500;color:var(--ink);line-height:1.3}
-.sys-stat{font-size:15px;color:var(--body);line-height:1.4}
-.sys-go{color:var(--dim);font-size:14px;transition:transform .25s var(--ease),color .2s}
-.sys-row:hover .sys-go{color:var(--accent);transform:translate(2px,-2px)}
-
-/* ── TICKER ─────────────────────────────────── */
-.ticker{
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-  background:var(--bg2);height:54px;overflow:hidden;display:flex;align-items:center;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-  position:relative;z-index:2;
-}
-.ticker-track{display:flex;white-space:nowrap;animation:scroll 64s linear infinite}
-.ticker:hover .ticker-track{animation-play-state:paused}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.tick{display:flex;align-items:center;gap:14px;padding:0 22px;font-family:var(--mono);font-size:12.5px;color:var(--body);white-space:nowrap}
-.tick::before{content:'';width:5px;height:5px;background:var(--accent);border-radius:1px;transform:rotate(45deg)}
-
-/* ── PITCH ──────────────────────────────────── */
-.pitch-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px 64px;max-width:1040px}
-.pitch-cols p{font-size:17px;line-height:1.75;margin-bottom:16px}
-
-.swap{
-  margin-top:72px;display:grid;grid-template-columns:repeat(3,1fr);
-  border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--line);gap:1px;
-}
-.swap-cell{background:var(--bg2);padding:28px 28px 30px;display:flex;flex-direction:column;gap:10px;transition:background .3s}
-.swap-cell:hover{background:var(--bg3)}
-.swap-old{font-family:var(--mono);font-size:13px;color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(119,133,154,.7)}
-.swap-new{
-  font-size:clamp(21px,2.1vw,28px);font-weight:600;color:var(--ink);letter-spacing:-.035em;line-height:1.1;
-  display:flex;align-items:center;gap:12px;
-}
-.swap-new::before{content:'→';font-weight:400;font-size:.75em;color:var(--accent);transition:transform .3s var(--ease)}
-.swap-cell:hover .swap-new::before{transform:translateX(4px)}
-
-/* ── PLATFORMS ──────────────────────────────── */
-.plat-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.plat{--mx:50%;--my:0%;display:flex;flex-direction:column;border-radius:24px}
-.plat::before{
-  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;
-  background:radial-gradient(560px circle at var(--mx) var(--my),rgba(77,217,236,.09),transparent 55%);
-  opacity:0;transition:opacity .4s;
-}
-.plat:hover::before{opacity:1}
-
-.plat-vis{
-  position:relative;height:296px;overflow:hidden;
-  background:radial-gradient(120% 90% at 50% 0%,rgba(77,217,236,.1),transparent 62%),var(--bg3);
-  border-bottom:1px solid var(--line);
-}
-.plat-vis::after{content:'';position:absolute;left:0;right:0;bottom:0;height:64px;background:linear-gradient(transparent,var(--bg2));pointer-events:none;z-index:2}
-
-/* BuildTrack: customer portal mock */
-.portal{
-  position:absolute;left:36px;right:36px;top:36px;
-  background:var(--bg);border:1px solid var(--line2);border-radius:16px 16px 0 0;
-  padding:22px 24px 48px;
-  box-shadow:0 30px 60px -20px rgba(0,0,0,.7);
-}
-.portal-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
-.portal-title{font-size:17px;font-weight:600;color:var(--ink);letter-spacing:-.02em}
-.portal-stage{font-family:var(--mono);font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums}
-.stages{display:grid;grid-template-columns:repeat(9,1fr);gap:5px;margin-bottom:10px}
-.stages i{height:8px;border-radius:2.5px;background:rgba(255,255,255,.09);transition:background .5s,box-shadow .5s}
-.stages i.on{background:var(--accent)}
-.stages i.now{background:var(--accent-hi);box-shadow:0 0 14px rgba(77,217,236,.8)}
-.stage-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-bottom:22px}
-.portal-rows{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
-.portal-chip{border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.4}
-.portal-chip b{display:block;font-family:var(--sans);font-size:14px;font-weight:500;color:var(--text);margin-top:3px}
-.portal-chip b.ok{color:var(--ok)}
-
-/* LoadKit: phone screenshots */
-.phones{position:absolute;inset:0;display:flex;justify-content:center;align-items:flex-start;padding-top:36px}
-.phone{
-  border-radius:26px;overflow:hidden;border:1px solid var(--line2);background:#0c1626;flex:none;
-  box-shadow:0 30px 60px -18px rgba(0,0,0,.75);transition:transform .7s var(--ease);
-}
-.phone img{display:block;width:100%;height:auto}
-.phone.back{width:204px;transform:translate(34px,30px) rotate(-5deg);opacity:.62;filter:saturate(.8)}
-.phone.front{width:222px;transform:translate(-30px,0) rotate(3deg);position:relative;z-index:1}
-.plat:hover .phone.front{transform:translate(-34px,-8px) rotate(2deg)}
-.plat:hover .phone.back{transform:translate(42px,24px) rotate(-6.5deg)}
-
-.plat-body{padding:34px 36px 36px;display:flex;flex-direction:column;gap:26px;flex:1;position:relative;z-index:2}
-.plat-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:12px}
-.plat-name{font-size:38px;letter-spacing:-.045em;line-height:1}
-.plat-time{
-  font-family:var(--mono);font-size:12px;color:var(--accent);white-space:nowrap;
-  border:1px solid var(--accent-line);background:var(--accent-soft);padding:7px 12px;border-radius:8px;
-}
-.plat-tag{font-size:17px;line-height:1.55;color:var(--text);max-width:44ch}
-.feats{list-style:none;display:grid;gap:11px}
-.feats li{font-size:15px;line-height:1.5;padding-left:27px;position:relative}
-.feats li::before{
-  content:'';position:absolute;left:2px;top:.42em;width:11px;height:6px;
-  border-left:1.5px solid var(--accent);border-bottom:1.5px solid var(--accent);transform:rotate(-45deg);
-}
-.plat-proof{font-size:14.5px;line-height:1.65;color:var(--text);padding:18px 20px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line)}
-.plat-proof strong{color:var(--accent);font-weight:500}
-.plat-proof .tagline{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-
-.price{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:auto}
-.price>div{background:var(--bg2);padding:16px 18px}
-.price .wide{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 18px}
-.price dt{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
-.price .wide dt{margin:0}
-.price dd{font-size:20px;font-weight:600;color:var(--ink);letter-spacing:-.03em;line-height:1.25;font-variant-numeric:tabular-nums}
-.price dd small{font-size:13.5px;font-weight:400;color:var(--muted);letter-spacing:0}
-.price .wide dd{font-size:14.5px;font-weight:500;color:var(--text);letter-spacing:0}
-.plat-foot{display:flex;align-items:center;justify-content:space-between;gap:16px 20px;flex-wrap:wrap}
-.plat-note{font-size:12.5px;color:var(--muted);line-height:1.5;max-width:27ch}
-
-/* ── HOW I WORK ─────────────────────────────── */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0 36px;position:relative}
-.steps::before,.steps::after{content:'';position:absolute;left:0;top:17px;height:1px;width:100%}
-.steps::before{background:var(--line2)}
-.steps::after{background:linear-gradient(90deg,var(--accent),rgba(77,217,236,.15));transform-origin:0 50%;transition:transform 1.8s var(--ease) .2s}
-.js .steps::after{transform:scaleX(0)}
-.js .steps.in::after{transform:scaleX(1)}
-.step{position:relative;padding-top:64px}
-.step-n{
-  position:absolute;top:0;left:0;z-index:1;
-  width:35px;height:35px;border-radius:50%;display:grid;place-items:center;
-  background:var(--bg);border:1px solid var(--accent-line);
-  font-family:var(--mono);font-size:12px;color:var(--accent);
-  box-shadow:0 0 0 8px var(--bg);
-}
-.step-title{font-size:23px;letter-spacing:-.035em;line-height:1.12;margin-bottom:12px}
-.step-text{font-size:15px;line-height:1.7;margin-bottom:18px}
-.step-proof{font-size:14px;line-height:1.6;color:var(--text);padding:14px 16px;border-radius:12px;background:var(--bg2);border:1px solid var(--line)}
-.step-proof span{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
-
-/* ── WORK ───────────────────────────────────── */
-.work{padding:var(--sec) 0 0;border-bottom:1px solid var(--line)}
-.work .sec-hd{margin-bottom:52px}
-
-/* eight-segment index: seven lit, one still loading */
-.index{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-bottom:28px}
-.index a{display:block;padding-top:18px;position:relative}
-.index a::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:6px;border-radius:2.5px;
-  background:var(--accent);transform-origin:0 50%;
-}
-.js .index a::before{transform:scaleX(0);transition:transform .7s var(--ease) calc(var(--i)*80ms)}
-.js .index.in a::before{transform:scaleX(1)}
-.index a.beta::before{background:repeating-linear-gradient(-45deg,var(--warn) 0 4px,rgba(242,184,75,.15) 4px 8px)}
-.index a:hover::before{background-color:var(--accent-hi)}
-.index-n{display:block;font-family:var(--mono);font-size:11.5px;color:var(--muted)}
-.index-name{display:block;font-size:14px;font-weight:500;color:var(--text);line-height:1.3;margin-top:3px;transition:color .2s}
-.index a:hover .index-name{color:var(--accent)}
-
-.case{
-  display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
-  gap:72px;align-items:start;padding:84px 0;border-top:1px solid var(--line);
-}
-.case-kicker{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
-.case-n{color:var(--accent);border:1px solid var(--accent-line);background:var(--accent-soft);padding:3px 8px;border-radius:6px;letter-spacing:0}
-.case-title{font-size:clamp(28px,3.3vw,44px);line-height:1.04;letter-spacing:-.04em;margin-bottom:32px}
-.pbr>div{display:grid;grid-template-columns:84px minmax(0,1fr);gap:18px;padding:18px 0;border-top:1px solid var(--line)}
-.pbr dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:4px}
-.pbr dd{font-size:15.5px;line-height:1.7}
-.pbr .res dt{color:var(--accent)}
-.pbr .res dd{color:var(--text)}
-.pbr .res dd strong{color:var(--ink)}
-.quote{margin-top:22px;padding:22px 24px;border-radius:14px;background:var(--bg2);border:1px solid var(--line)}
-.quote p{font-size:18px;font-weight:500;color:var(--ink);line-height:1.45;letter-spacing:-.02em}
-.quote cite{display:block;font-style:normal;font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px}
-
-/* Panel */
-.panel-hd{
-  display:flex;justify-content:space-between;align-items:center;gap:12px;
-  font-family:var(--mono);font-size:12.5px;color:var(--text);
-  padding:15px 22px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02);
-}
-.status{display:inline-flex;align-items:center;gap:9px;color:var(--muted);white-space:nowrap}
-.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-top:1px solid var(--line)}
-.mc{background:var(--bg2);padding:20px 22px 22px}
-.mc-n{font-size:34px;font-weight:600;color:var(--ink);line-height:1;margin-bottom:8px;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
-.mc-n.c{color:var(--accent)}
-.mc-n.sm{font-size:25px;letter-spacing:-.035em;padding-top:7px}
-.mc-l{font-size:13.5px;color:var(--muted);line-height:1.4}
-.panel-tags{display:flex;flex-wrap:wrap;gap:6px;padding:16px 22px;border-top:1px solid var(--line)}
-.ptag{font-family:var(--mono);font-size:11.5px;color:var(--body);border:1px solid var(--line);padding:4px 10px;border-radius:6px}
-.panel-note{font-size:13.5px;color:var(--muted);padding:14px 22px 16px;border-top:1px solid var(--line);line-height:1.6}
-.panel-note a{color:var(--accent)}
-.panel-note a:hover{text-decoration:underline}
-
-/* panel visuals */
-.scan{padding:8px 22px 10px}
-.scan-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
-.scan-row:last-child{border-bottom:0}
-.scan-label{font-family:var(--mono);font-size:13px;color:var(--text)}
-
-.flow{position:relative;display:flex;justify-content:space-between;padding:32px 26px 26px}
-.flow::before,.flow::after{content:'';position:absolute;left:46px;right:46px;top:37px;height:2px;border-radius:2px}
-.flow::before{background:rgba(255,255,255,.08)}
-.flow::after{background:linear-gradient(90deg,rgba(77,217,236,.25),var(--accent));transform-origin:0 50%;transition:transform 1.6s var(--ease) .3s}
-.js .case .flow::after{transform:scaleX(0)}
-.js .case.in .flow::after{transform:scaleX(1)}
-.flow-step{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:12px}
-.flow-dot{width:12px;height:12px;border-radius:50%;background:var(--bg2);border:2px solid var(--accent-line)}
-.flow-dot.active{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
-.flow-label{font-family:var(--mono);font-size:12px;color:var(--body);white-space:nowrap}
-
-.wire{padding:24px 22px;display:flex;flex-direction:column;gap:14px}
-.mw-row{display:flex;align-items:center;gap:14px}
-.mw-label{font-family:var(--mono);font-size:12.5px;color:var(--text);width:92px;flex:none}
-.mw-track{flex:1;height:7px;border-radius:4px;background:rgba(255,255,255,.05);overflow:hidden}
-.mw-bar{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,rgba(77,217,236,.3),var(--accent));transform-origin:0 50%;transition:transform 1.4s var(--ease) .25s}
-.js .case .mw-bar,.js .case .route-fill{transform:scaleX(0)}
-.js .case.in .mw-bar,.js .case.in .route-fill{transform:scaleX(1)}
-.mw-row:nth-child(2) .mw-bar{transition-delay:.35s}
-.mw-row:nth-child(3) .mw-bar{transition-delay:.45s}
-.mw-row:nth-child(4) .mw-bar{transition-delay:.55s}
-.mw-row:nth-child(5) .mw-bar{transition-delay:.65s}
-
-.route{padding:24px 22px 22px}
-.route-hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
-.route-label{font-family:var(--mono);font-size:12.5px;color:var(--text)}
-.route-pct{font-size:20px;font-weight:600;color:var(--accent);letter-spacing:-.03em}
-.route-bar{height:7px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden;margin-bottom:18px}
-.route-fill{height:100%;width:99%;border-radius:4px;background:linear-gradient(90deg,rgba(77,217,236,.3),var(--accent));transform-origin:0 50%;transition:transform 2s var(--ease) .3s}
-.route-pills{display:flex;flex-wrap:wrap;gap:7px}
-
-.world-map{padding:18px 22px 10px}
-.world-map svg{width:100%;height:auto;display:block}
-.wm-dots circle{fill:var(--muted);opacity:.42}
-.wm-markers circle{fill:var(--accent);filter:drop-shadow(0 0 4px rgba(77,217,236,.8))}
-.wm-markers circle.wm-home{fill:#fff;filter:drop-shadow(0 0 6px rgba(255,255,255,.85))}
-.wm-arcs path{fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;opacity:.34;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 1.5s var(--ease) calc(.35s + var(--i) * 80ms)}
-.js .case .wm-arcs path{stroke-dashoffset:1}
-.js .case.in .wm-arcs path{stroke-dashoffset:0}
-.wm-rings circle{fill:none;stroke:var(--accent);stroke-width:1.5;opacity:.4;transition:opacity .6s var(--ease) 1.7s}
-.js .case .wm-rings circle{opacity:0}
-.js .case.in .wm-rings circle{opacity:.4}
-.wm-rings circle.wm-pulse{stroke:#fff;transform-box:fill-box;transform-origin:center;animation:wmPulse 3.2s ease-out infinite}
-.wm-rings circle.wm-pulse-2{animation-delay:1.6s}
-@keyframes wmPulse{0%{transform:scale(.45);opacity:.75}100%{transform:scale(2.5);opacity:0}}
-
-.migrate{display:flex;align-items:center;gap:12px;padding:26px 22px}
-.migrate-chip{font-family:var(--mono);font-size:13px;padding:9px 14px;border:1px solid var(--line);border-radius:9px;color:var(--muted)}
-.migrate-chip.from{text-decoration:line-through;text-decoration-color:rgba(119,133,154,.7)}
-.migrate-chip.to{color:var(--ink);border-color:var(--accent-line);background:var(--accent-soft)}
-.migrate-arrow{color:var(--accent)}
-
-/* ── FAQ ────────────────────────────────────── */
-.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:0 72px}
-.faq-item{padding:30px 0 32px;border-top:1px solid var(--line)}
-.faq-q{font-size:21px;letter-spacing:-.03em;line-height:1.2;margin-bottom:12px}
-.faq-a{font-size:15.5px;line-height:1.75;max-width:60ch}
-
-/* ── ABOUT ──────────────────────────────────── */
-.about-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:start}
-.about-grid .h2{margin-bottom:32px}
-.about-copy p{font-size:17px;line-height:1.75;margin-bottom:16px;max-width:56ch}
-.sheet-hd{font-family:var(--mono);font-size:12.5px;color:var(--text);padding:15px 22px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
-.sheet dl>div{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:14px 22px;border-bottom:1px solid var(--line)}
-.sheet dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
-.sheet dd{font-size:14.5px;color:var(--text);text-align:right}
-.stack{display:flex;flex-wrap:wrap;gap:7px;padding:20px 22px 22px}
-.stag{font-family:var(--mono);font-size:12px;color:var(--body);border:1px solid var(--line);padding:6px 11px;border-radius:7px;transition:border-color .2s,color .2s}
-.stag:hover{border-color:var(--accent-line);color:var(--accent)}
-
-/* ── CONTACT ────────────────────────────────── */
-.contact{padding:150px 0 140px;position:relative;overflow:hidden;text-align:center}
-.contact::before{
-  content:'';position:absolute;left:50%;bottom:-460px;transform:translateX(-50%);
-  width:1400px;height:820px;border-radius:50%;
-  background:radial-gradient(ellipse,rgba(77,217,236,.2) 0%,rgba(38,84,190,.07) 40%,transparent 64%);
-  pointer-events:none;
-}
-.contact .wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
-.contact .eyebrow{margin-bottom:28px}
-.contact h2{font-size:clamp(44px,7.4vw,108px);line-height:.94;letter-spacing:-.055em;margin-bottom:28px;max-width:9.5em}
-.contact h2 em{
-  font-style:normal;
-  background:linear-gradient(180deg,var(--accent-hi),#2BA9C4);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.contact-sub{font-size:19px;line-height:1.6;max-width:50ch;margin-bottom:60px}
-.contact-act{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
-.contact-email{font-size:15.5px;padding:15px 20px;border-radius:12px}
-.copy{font-family:var(--sans)}
-.copy.ok{color:var(--ok);border-color:rgba(91,217,138,.4)}
-
-/* ── FOOTER ─────────────────────────────────── */
-footer{padding:26px 0;border-top:1px solid var(--line)}
-.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-footer span,footer a{font-family:var(--mono);font-size:12px;color:var(--muted)}
-footer a{transition:color .2s}
-footer a:hover{color:var(--accent)}
-.foot-links{display:flex;gap:24px;flex-wrap:wrap}
-
-/* ── WAYS TO START ──────────────────────────── */
-.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.way{display:flex;flex-direction:column;padding:30px 30px 28px;border-radius:22px}
-.way:hover{background:var(--bg3)}
-.way-n{font-family:var(--mono);font-size:12px;color:var(--accent);border:1px solid var(--accent-line);background:var(--accent-soft);padding:3px 8px;border-radius:6px;align-self:flex-start;margin-bottom:26px}
-.way-title{font-size:26px;letter-spacing:-.04em;line-height:1.1;margin-bottom:12px}
-.way-text{font-size:15.5px;line-height:1.7;margin-bottom:24px}
-.way-meta{font-family:var(--mono);font-size:12.5px;color:var(--text);margin-top:auto;padding-top:18px;border-top:1px solid var(--line)}
-.way-go{display:flex;align-items:center;gap:8px;font-size:15.5px;font-weight:500;color:var(--accent);margin-top:14px}
-.way-go .arr{transition:transform .25s var(--ease)}
-.way:hover .way-go .arr{transform:translateX(4px)}
-
-/* technical detail, folded away for readers who want it */
-.tech{border-top:1px solid var(--line)}
-.tech summary{
-  cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
-  padding:13px 22px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
-  transition:color .2s,background .2s;
-}
-.tech summary::-webkit-details-marker{display:none}
-.tech summary::after{content:'+';font-size:17px;line-height:1;color:var(--accent);letter-spacing:0}
-.tech[open] summary::after{content:'\2212'}
-.tech summary:hover{color:var(--text);background:rgba(255,255,255,.02)}
-.tech summary:focus-visible{outline:2px solid var(--accent);outline-offset:-3px;border-radius:6px}
-.panel-note.plain{color:var(--text)}
-
-/* contact: what happens next, beside the form */
-.contact-grid{width:100%;max-width:1040px;display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:64px;align-items:start;text-align:left}
-.next-title{font-size:24px;letter-spacing:-.035em;line-height:1.15;margin-bottom:22px}
-.next-list{list-style:none;counter-reset:n;margin-bottom:34px}
-.next-list li{counter-increment:n;position:relative;padding:17px 0 17px 52px;border-top:1px solid var(--line);font-size:16.5px;line-height:1.55;color:var(--text)}
-.next-list li:last-child{border-bottom:1px solid var(--line)}
-.next-list li::before{
-  content:'0' counter(n);position:absolute;left:0;top:17px;width:34px;height:26px;display:grid;place-items:center;
-  border:1px solid var(--accent-line);background:var(--accent-soft);border-radius:7px;
-  font-family:var(--mono);font-size:12px;color:var(--accent);
-}
-.next-or{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-bottom:12px}
-
-/* ── RESPONSIVE ─────────────────────────────── */
-@media(max-width:1120px){
-  :root{--sec:108px}
-  .nav-links a:not(.btn){padding:9px 10px}
-  .steps{grid-template-columns:1fr 1fr;gap:56px 36px}
-  .steps::before,.steps::after{display:none}
-  .step-n{box-shadow:none}
-  .case{gap:48px}
-  .index{grid-template-columns:repeat(4,1fr);gap:24px 8px}
-}
-@media(max-width:940px){
-  .sec-hd{margin-bottom:48px}
-  .hero-top{grid-template-columns:1fr;gap:44px}
-  .hero-sub{max-width:58ch}
-  .ways{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr;gap:48px;max-width:640px}
-  .plat-grid{grid-template-columns:1fr}
-  .case{grid-template-columns:1fr;gap:36px;padding:64px 0}
-  .about-grid{grid-template-columns:1fr;gap:48px}
-  .faq-list{grid-template-columns:1fr}
-  .swap{grid-template-columns:1fr 1fr}
-  .nav-links a:not(.btn){display:none}
-  .nav-links .btn{margin-left:0}
-}
-@media(max-width:720px){
-  :root{--pad:20px;--sec:84px}
-  html{scroll-padding-top:86px}
-  .nav{top:10px;padding:0 10px}
-  .nav-inner{height:56px;padding:0 8px 0 16px;border-radius:15px}
-  .hero{padding:118px 0 64px}
-  .enq{padding:24px 20px 22px}
-  .way{padding:24px 22px 22px}
-  .way-title{font-size:23px}
-  .sys-row{grid-template-columns:minmax(0,1fr) 66px 16px;gap:3px 12px}
-  .sys-stat{grid-column:1/-1;grid-row:2;font-size:14px}
-  .tech summary{padding-left:16px;padding-right:16px}
-  .pill{font-size:11.5px;margin-bottom:28px}
-  .hero-h1{letter-spacing:-.045em;margin-bottom:26px}
-  .hero-sub{margin-bottom:30px}
-  .hero-meta{font-size:12.5px}
-  .console{margin-top:56px;border-radius:16px}
-  .console-bar{padding:12px 16px;font-size:11.5px}
-  .sys-row{padding:13px 16px}
-  .pitch-cols{grid-template-columns:1fr;gap:0}
-  .pitch-cols p{font-size:16px}
-  .swap{margin-top:48px}
-  .swap-cell{padding:20px 18px 22px}
-  .plat-vis{height:262px}
-  .plat-top{flex-wrap:wrap;gap:10px 14px}
-  .portal{left:16px;right:16px;top:24px;padding:16px 16px 44px}
-  .portal-rows{gap:7px}
-  .portal-chip{padding:9px 8px;font-size:11px}
-  .portal-chip b{font-size:12.5px;white-space:nowrap}
-  .plat-body{padding:26px 22px 26px;gap:22px}
-  .plat-name{font-size:32px}
-  .phone.front{width:188px}
-  .phone.back{width:172px}
-  .steps{grid-template-columns:1fr;gap:44px}
-  .pbr>div{grid-template-columns:1fr;gap:4px;padding:16px 0}
-  .mc{padding:16px 16px 18px}
-  .mc-n{font-size:28px}
-  .mc-n.sm{font-size:20px}
-  .panel-hd,.panel-tags,.panel-note,.sheet-hd,.sheet dl>div,.stack{padding-left:16px;padding-right:16px}
-  .scan,.wire,.route,.migrate{padding-left:16px;padding-right:16px}
-  .flow{padding:28px 8px 22px}
-  .flow::before,.flow::after{left:34px;right:34px;top:33px}
-  .flow-label{font-size:11px}
-  .world-map{padding:14px 12px 6px}
-  .contact{padding:104px 0 96px}
-  .contact-act .btn{flex:1 1 200px}
-  .foot-inner{flex-direction:column;align-items:flex-start}
-}
-@media(max-width:440px){
-  .swap{grid-template-columns:1fr}
-  .price{grid-template-columns:1fr}
-  .index-name{font-size:13px}
-  .status{font-size:11.5px}
-}
-
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}
-  .js .r{opacity:1;transform:none}
-}
-</style>
 </head>
 <body>
-
 <a class="skip" href="#main">Skip to content</a>
-
-<!-- NAV -->
 <header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#top" aria-label="apploading.co, back to top">
-      <span class="logo">app<span>.</span>loading</span>
-      <span class="load" id="load" aria-hidden="true">0%</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#platforms">Products</a>
-      <a href="#how">How it works</a>
-      <a href="#work">Results</a>
-      <a href="#faq">FAQ</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="btn btn-sm">Get in touch</a>
-    </nav>
+  <div class="nav-in">
+    <a class="brand" href="/" aria-label="apploading.co, home">apploading<b>.co</b></a>
+    <nav aria-label="Main"><ul class="nav-links"><li><a href="/services/">Services</a></li><li><a href="/work/">Work</a></li><li><a href="/guest-app-for-lodges/">Customer apps</a></li><li><a href="/about/">About</a></li></ul></nav>
+    <span class="load" id="load" aria-hidden="true">0%</span>
+    <a class="btn btn-sm" href="/#enquire" data-track="nav">Get in touch</a>
     <span class="nav-bar" id="navBar" aria-hidden="true"></span>
   </div>
 </header>
-
 <main id="main">
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="wrap hero-in">
-    <div class="hero-top">
-      <div class="hero-copy">
-        <div class="pill r"><span class="dot"></span>Taking on new projects · Cape Town, ZA</div>
-        <h1 class="hero-h1 r d1">Need an app for your business? <em>I build it, launch it and keep it running.</em></h1>
-        <p class="hero-sub r d2">
-          Tell me what you need in plain words. You get a clear price, a clear timeline, and
-          one person who stays with you after launch. <strong>No technical knowledge needed.</strong>
-        </p>
-        <ul class="feats hero-points r d3">
-          <li>Ready-made products live in 2 to 6 weeks</li>
-          <li>Custom builds, quoted after a short call</li>
-          <li>One person from first call to long after launch</li>
-        </ul>
-        <p class="hero-meta r d4">Prefer email? <a href="mailto:dave@apploading.co">dave@apploading.co</a></p>
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-meta">Dave Welensky &middot; independent builder &middot; Cape Town</p>
+      <h1 id="h1" data-split>Less admin. Happier customers. <em>More time to grow your business.</em></h1>
+      <p class="lede">I'm Dave. I build websites, apps and practical tools that take repetitive work off your hands and make life easier for your team and your customers. Tell me what's slowing you down, even if you have no idea what the solution looks like.</p>
+      <p class="typed" aria-hidden="true"><span class="typed-lead">I can take away</span><span class="typed-words" id="typed" data-words="chasing updates on WhatsApp|typing the same details twice|answering the same questions|building reports by hand|losing jobs between spreadsheets">chasing updates on WhatsApp</span><i class="caret"></i></p>
+      <div class="cta-row">
+        <a class="btn arrow" href="#enquire" data-track="hero-primary">Tell me what's slowing you down</a>
+        <a class="btn btn-line" href="#work">See what I've built</a>
       </div>
-
-      <form class="card enq r d2" action="mailto:dave@apploading.co" method="post" enctype="text/plain">
-        <h2 class="enq-title">Tell me what you need</h2>
-        <p class="enq-sub">I reply the same business day.</p>
-        <label class="fld"><span>Your name</span><input type="text" name="name" autocomplete="name" required maxlength="120"></label>
-        <label class="fld"><span>Email</span><input type="email" name="email" autocomplete="email" required maxlength="200"></label>
-        <label class="fld"><span>About your project</span><textarea name="message" rows="4" required minlength="5" maxlength="4000" placeholder="What should it do, and who is it for?"></textarea></label>
-        <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-        <button type="submit" class="btn enq-btn">Send message <span class="arr">→</span></button>
-        <p class="enq-status" role="status" aria-live="polite"></p>
-      </form>
+      <p class="reassure">You'll hear back from me, not a sales team. I reply the same business day.</p>
     </div>
-
-    <!-- Proof: systems built here and running for real businesses -->
-    <div class="console r d4">
-      <div class="console-bar">
-        <span>Built here, running for real businesses today</span>
-        <span class="console-count"><span class="dot"></span>7 systems live</span>
+    <div class="hero-visual">
+      <div class="trio">
+        <div class="phone"><img src="/assets/img/guest-wild-780.webp" srcset="/assets/img/guest-wild-390.webp 390w, /assets/img/guest-wild-780.webp 780w" sizes="(min-width:1020px) 190px, 28vw" width="780" height="1688" alt="Wildlife passport screen showing 7 of 23 animals found, with giraffe and plains zebra discoveries ticked off." decoding="async"></div>
+        <div class="phone"><img src="/assets/img/guest-prep-780.webp" srcset="/assets/img/guest-prep-390.webp 390w, /assets/img/guest-prep-780.webp 780w" sizes="(min-width:1020px) 230px, 40vw" width="780" height="1688" alt="Guest app home screen counting down to a stay: 8 days, 11 hours and 55 minutes, a Plan your arrival button and the start of a before-you-go checklist." fetchpriority="high" decoding="async"></div>
+        <div class="phone"><img src="/assets/img/guest-memories-780.webp" srcset="/assets/img/guest-memories-390.webp 390w, /assets/img/guest-memories-780.webp 780w" sizes="(min-width:1020px) 190px, 28vw" width="780" height="1688" alt="Trip memories card summarising a stay: two photos, 7 species, 7 sightings and 4 discovery badges." decoding="async"></div>
       </div>
-      <div class="sys">
-        <a class="sys-row" href="#case-02"><span class="sys-name">BuildTrack: order tracking</span><span class="pill-s ok">live</span><span class="sys-stat">Support calls during builds dropped to zero</span><span class="sys-go" aria-hidden="true">↗</span></a>
-        <a class="sys-row" href="#case-03"><span class="sys-name">LoadKit: community app</span><span class="pill-s ok">live</span><span class="sys-stat">780 swimmers in 16 countries</span><span class="sys-go" aria-hidden="true">↗</span></a>
-        <a class="sys-row" href="#case-03"><span class="sys-name">Swim clubs platform</span><span class="pill-s ok">live</span><span class="sys-stat">3 clubs, adults and junior squads, on one system</span><span class="sys-go" aria-hidden="true">↗</span></a>
-        <a class="sys-row" href="#case-07"><span class="sys-name">Observer Hub</span><span class="pill-s ok">live</span><span class="sys-stat">Saves 6 hours of paperwork after every swim</span><span class="sys-go" aria-hidden="true">↗</span></a>
-        <a class="sys-row" href="#case-04"><span class="sys-name">Ocean-swim safety system</span><span class="pill-s ok">live</span><span class="sys-stat">Boats, crew and swimmers tracked live since July 2026</span><span class="sys-go" aria-hidden="true">↗</span></a>
-        <a class="sys-row" href="#case-05"><span class="sys-name">Consulting firm operations</span><span class="pill-s ok">live</span><span class="sys-stat">Timesheets, leave and expenses in one place</span><span class="sys-go" aria-hidden="true">↗</span></a>
-        <a class="sys-row" href="#case-01"><span class="sys-name">Data checking system</span><span class="pill-s ok">live</span><span class="sys-stat">171,000 errors caught before a major system switch</span><span class="sys-go" aria-hidden="true">↗</span></a>
-      </div>
+      <p class="cap">Real screens from a working guest app I built for a bush lodge. The lodge's name, host and photos are replaced with neutral placeholders.</p>
     </div>
   </div>
 </section>
-
-<!-- TICKER -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <div class="tick">Two ready-made products · live in 2 to 6 weeks</div>
-    <div class="tick">Prices shown on this page</div>
-    <div class="tick">780 swimmers · 16 countries</div>
-    <div class="tick">Support calls during builds: zero</div>
-    <div class="tick">6 hours of paperwork saved per swim</div>
-    <div class="tick">171,000 data errors caught before launch</div>
-    <div class="tick">One person, start to finish</div>
-    <div class="tick">Monthly support after launch</div>
-    <div class="tick">Seven systems running today</div>
-    <div class="tick">Cape Town, South Africa</div>
-    <div class="tick">Two ready-made products · live in 2 to 6 weeks</div>
-    <div class="tick">Prices shown on this page</div>
-    <div class="tick">780 swimmers · 16 countries</div>
-    <div class="tick">Support calls during builds: zero</div>
-    <div class="tick">6 hours of paperwork saved per swim</div>
-    <div class="tick">171,000 data errors caught before launch</div>
-    <div class="tick">One person, start to finish</div>
-    <div class="tick">Monthly support after launch</div>
-    <div class="tick">Seven systems running today</div>
-    <div class="tick">Cape Town, South Africa</div>
-  </div>
-</div>
-
-<!-- WAYS TO START -->
-<section id="start" class="sec">
+<div class="rv"><div class="marq" aria-label="Things I have built"><div class="marq-track"><div class="marq-set"><span>Customer order tracking</span><span>Guest and customer apps</span><span>Data checking</span><span>Evidence capture on a boat</span><span>Community apps</span><span>Internal tools and reporting</span><span>Websites that do a job</span><span>Business automation</span></div><div class="marq-set" aria-hidden="true"><span>Customer order tracking</span><span>Guest and customer apps</span><span>Data checking</span><span>Evidence capture on a boat</span><span>Community apps</span><span>Internal tools and reporting</span><span>Websites that do a job</span><span>Business automation</span></div></div></div></div><section class="proof-sec" aria-label="Results from past projects"><div class="wrap"><div class="proof" role="list"><div role="listitem" class="rv"><b><span data-count="171000">171,000</span></b><span>data errors caught before go-live, for a company moving to a new system</span></div><div role="listitem" class="rv"><b><span data-count="6">6</span> hrs</b><span>of write-up saved after every swim, for an open-water observer</span></div><div role="listitem" class="rv"><b><span data-count="780">780</span></b><span>swimmers in 16 countries on one community app</span></div><div role="listitem" class="rv"><b>0</b><span>support calls during the build phase, once customers could follow their order online</span></div></div></div></section><section class="sec alt" id="problems" aria-labelledby="prob-h">
   <div class="wrap">
-    <div class="sec-hd">
-      <div class="eyebrow r">Where to start</div>
-      <h2 class="h2 r d1">Three ways to work with me. <em>Pick the one that sounds like you.</em></h2>
+    <p class="kicker">Sound familiar?</p>
+    <h2 class="h2" id="prob-h">You don't have to know you need an app.</h2>
+    <p class="lede">Most people who contact me don't. They just know where their week goes. If one of these sounds like you, we can start there.</p>
+    <ul class="signs"><li class="sign rv"><h3>Customers keep asking the same questions.</h3><span class="lbl">What could change</span><p>Put the answers where customers already look: a guide, a portal or a helper on your website, so your phone and inbox get quieter.</p></li><li class="sign rv"><h3>The same information gets typed in several places.</h3><span class="lbl">What could change</span><p>Connect your tools so details are entered once and show up wherever they are needed.</p></li><li class="sign rv"><h3>Jobs disappear between spreadsheets, email and WhatsApp.</h3><span class="lbl">What could change</span><p>One shared view of every job: what stage it's at, who has it and what happens next.</p></li><li class="sign rv"><h3>Routine reports take hours to put together.</h3><span class="lbl">What could change</span><p>Reports that build themselves from the information you already collect.</p></li><li class="sign rv"><h3>Your website looks fine, but it doesn't do much for customers.</h3><span class="lbl">What could change</span><p>Give people something useful to do: book, track, ask, approve or pay, without having to call you.</p></li><li class="sign rv"><h3>You have an idea, but no technical brief.</h3><span class="lbl">What could change</span><p>That's a normal place to start. We talk it through and I turn it into something specific you can say yes or no to.</p></li></ul>
+    <p class="note-line">These are the kinds of problems I help with. The projects further down are things I've actually built.</p>
+  </div>
+</section>
+<section class="sec dark" id="guest-companion" aria-labelledby="gc-h" data-case="guest-companion">
+  <div class="wrap">
+    <div class="story-head rv">
+      <p class="kicker">Featured: a working demonstration</p>
+      <h2 class="h2" id="gc-h">A website can help win the booking. A guest companion can help look after the guest.</h2>
+      <p class="lede">A lodge owner told me they might need an app, but they weren't sure what it would be. I didn't start with a spec. I looked at how the business works, then built one idea to show what it could mean.</p>
     </div>
-    <div class="ways">
-      <a class="card way r d1" href="#platforms">
-        <span class="way-n">01</span>
-        <h3 class="way-title">Use a ready-made product</h3>
-        <p class="way-text">Order tracking for businesses that make things to order, or a community app for your club. Both already run real businesses, and are set up under your name and brand.</p>
-        <span class="way-meta">Live in 2 to 6 weeks</span>
-        <span class="way-go">See the two products <span class="arr">→</span></span>
-      </a>
-      <a class="card way r d2" href="#contact" data-need="Something custom">
-        <span class="way-n">02</span>
-        <h3 class="way-title">Build something custom</h3>
-        <p class="way-text">You have an idea or a problem, not a technical brief. I work out what's needed with you, then build it, launch it and look after it.</p>
-        <span class="way-meta">Most custom builds take 2 to 4 months</span>
-        <span class="way-go">Tell me about it <span class="arr">→</span></span>
-      </a>
-      <a class="card way r d3" href="#contact" data-need="Help with an existing app">
-        <span class="way-n">03</span>
-        <h3 class="way-title">Fix or extend what you have</h3>
-        <p class="way-text">A system, website or pile of spreadsheets that's slow, tangled or holding the business back. I untangle it and get it working properly.</p>
-        <span class="way-meta">Quoted after a short call</span>
-        <span class="way-go">Tell me what's wrong <span class="arr">→</span></span>
-      </a>
+    <dl class="story-facts">
+        <div><dt>The starting point</dt><dd>An accommodation website, and an open conversation about whether the lodge might need an app. No brief and no feature list.</dd></div>
+        <div><dt>The opportunity I saw</dt><dd>Guests have questions before they arrive and while they stay, and most are answered one message at a time. Much of that could live in the guest's own pocket.</dd></div>
+        <div><dt>What I designed and built</dt><dd>A personal link for each booking that opens a guest app in the phone's browser. Nothing to download. The home screen changes as the stay moves: preparing, arriving, staying, leaving, remembering.</dd></div>
+      </dl>
+    <div class="scrolly"><div class="scrolly-phone"><div class="phone stack"><img src="/assets/img/guest-prep-780.webp" srcset="/assets/img/guest-prep-390.webp 390w, /assets/img/guest-prep-780.webp 780w" sizes="300px" width="780" height="1688" alt="Guest app home screen counting down to a stay: 8 days, 11 hours and 55 minutes, a Plan your arrival button and the start of a before-you-go checklist." loading="lazy" decoding="async" class=on><img src="/assets/img/guest-arrive-780.webp" srcset="/assets/img/guest-arrive-390.webp 390w, /assets/img/guest-arrive-780.webp 780w" sizes="300px" width="780" height="1688" alt="Arrival-day screen reading Today you arrive, with a tip to arrive before sunset, a Directions button and the lodge address." loading="lazy" decoding="async"><img src="/assets/img/guest-wild-780.webp" srcset="/assets/img/guest-wild-390.webp 390w, /assets/img/guest-wild-780.webp 780w" sizes="300px" width="780" height="1688" alt="Wildlife passport screen showing 7 of 23 animals found, with giraffe and plains zebra discoveries ticked off." loading="lazy" decoding="async"><img src="/assets/img/guest-memories-780.webp" srcset="/assets/img/guest-memories-390.webp 390w, /assets/img/guest-memories-780.webp 780w" sizes="300px" width="780" height="1688" alt="Trip memories card summarising a stay: two photos, 7 species, 7 sightings and 4 discovery badges." loading="lazy" decoding="async"></div><p class="sdots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></p></div><ol class="scrolly-steps"><li class="sstep on" data-i="0"><span class="sn">01 / 04</span><h3>Welcome and preparation</h3><p>A personal link for each booking. It counts down to arrival and gives a short before-you-go checklist.</p></li><li class="sstep" data-i="1"><span class="sn">02 / 04</span><h3>Arrival day</h3><p>Directions, the address, a nudge to arrive before sunset, and check-in questions that go to the host in one tap.</p></li><li class="sstep" data-i="2"><span class="sn">03 / 04</span><h3>Wildlife passport</h3><p>Guests tick off the animals they have seen and add their own photos, which stay on their phone.</p></li><li class="sstep" data-i="3"><span class="sn">04 / 04</span><h3>Trip memories</h3><p>At the end, the app makes a memories card on the guest's phone: a real image to keep or share.</p></li></ol></div><ul class="shots" aria-label="Screens from the guest app"><li class="rv"><figure><div class="phone"><img src="/assets/img/guest-prep-780.webp" srcset="/assets/img/guest-prep-390.webp 390w, /assets/img/guest-prep-780.webp 780w" sizes="(min-width:721px) 40vw, 72vw" width="780" height="1688" alt="Guest app home screen counting down to a stay: 8 days, 11 hours and 55 minutes, a Plan your arrival button and the start of a before-you-go checklist." loading="lazy" decoding="async"></div><figcaption><b>1. Welcome and preparation</b><span>A personal link for each booking. It counts down to arrival and gives a short before-you-go checklist.</span></figcaption></figure></li><li class="rv"><figure><div class="phone"><img src="/assets/img/guest-arrive-780.webp" srcset="/assets/img/guest-arrive-390.webp 390w, /assets/img/guest-arrive-780.webp 780w" sizes="(min-width:721px) 40vw, 72vw" width="780" height="1688" alt="Arrival-day screen reading Today you arrive, with a tip to arrive before sunset, a Directions button and the lodge address." loading="lazy" decoding="async"></div><figcaption><b>2. Arrival day</b><span>Directions, the address, a nudge to arrive before sunset, and check-in questions that go to the host in one tap.</span></figcaption></figure></li><li class="rv"><figure><div class="phone"><img src="/assets/img/guest-wild-780.webp" srcset="/assets/img/guest-wild-390.webp 390w, /assets/img/guest-wild-780.webp 780w" sizes="(min-width:721px) 40vw, 72vw" width="780" height="1688" alt="Wildlife passport screen showing 7 of 23 animals found, with giraffe and plains zebra discoveries ticked off." loading="lazy" decoding="async"></div><figcaption><b>3. Wildlife passport</b><span>Guests tick off the animals they have seen and add their own photos, which stay on their phone.</span></figcaption></figure></li><li class="rv"><figure><div class="phone"><img src="/assets/img/guest-memories-780.webp" srcset="/assets/img/guest-memories-390.webp 390w, /assets/img/guest-memories-780.webp 780w" sizes="(min-width:721px) 40vw, 72vw" width="780" height="1688" alt="Trip memories card summarising a stay: two photos, 7 species, 7 sightings and 4 discovery badges." loading="lazy" decoding="async"></div><figcaption><b>4. Trip memories</b><span>At the end, the app makes a memories card on the guest's phone: a real image to keep or share.</span></figcaption></figure></li></ul>
+    <div class="cta-row rv"><button class="btn btn-line btn-sm" type="button" data-open-shots>View all six screens larger</button><span class="tag demo">Working demonstration</span></div>
+    <p class="cap" style="text-align:left;margin-left:0;max-width:70ch">Real screens from the app, captured on a phone-sized screen. The lodge's name, host, address, contact details and photos are replaced with neutral placeholders and my own illustrations. The guests are sample people.</p>
+    <div class="story-cols">
+      <div class="rv"><h3>What a guest can do today</h3><ul class="ticks"><li>Count down to arrival and work through a short before-you-go checklist</li><li>See the lodge forecast, sunrise, sunset and moon. Without signal, the app shows the last saved forecast and says so</li><li>Get directions and drive times, and find food, fuel, pharmacies and hospitals nearby</li><li>Find emergency numbers, and message or call the host in one tap</li><li>Keep a wildlife passport: tick off sightings, add photos that stay on their phone, earn small badges</li><li>Make a trip memories card as a real image to keep or share</li><li>Ask for extras such as a transfer or a braai pack. The host confirms price and availability</li><li>Use it in English or German, and keep using it without signal once opened</li></ul></div>
+      <div class="rv"><h3>What it could mean for an owner</h3><ul class="ticks"><li>Fewer of the same questions arriving one by one before a stay</li><li>One place to send every guest, with the host's contact details one tap away</li><li>A tidy way for guests to ask for extras</li><li>A personal touch that guests can keep after they leave</li></ul>
+        <p class="honest"><b>To be clear:</b> this is a working demonstration, not a deployed product. It isn't connected to a booking system, and I haven't measured any time savings. The points above are what the idea is for, not results.</p></div>
+    </div>
+    <p class="bridge rv">What could your customers do for themselves, and what would that free you up to do?</p>
+    <div class="cta-row rv">
+      <a class="btn arrow" href="#enquire" data-track="story">Tell me what's slowing you down</a>
+      <a class="btn btn-line" href="/guest-app-for-lodges/" data-case-link="guest-companion">See how the guest app works</a>
     </div>
   </div>
 </section>
-
-<!-- PITCH -->
-<section id="pitch" class="sec">
-  <div class="wrap">
-    <div class="sec-hd">
-      <div class="eyebrow r">Why it's faster and cheaper</div>
-      <h2 class="h2 r d1">You're not paying me to start from scratch. <em>The hard parts are already built.</em></h2>
-    </div>
-    <div class="pitch-cols">
-      <div class="r d1">
-        <p>Most of what a business app needs, I've already built and tested with real customers. That's what makes me faster and cheaper than an agency. Not because I cut corners, but because <strong>the hard problems are already solved.</strong></p>
-        <p>Both products below already run a real business. You get something proven, adjusted to how your business works and carrying your name.</p>
-      </div>
-      <div class="r d2">
-        <p>You get the software, the setup, and ongoing support for a monthly fee. <strong>Agency-quality work at a fraction of the cost and time.</strong></p>
-        <p>And you deal with one person: the one who makes the decisions, does the work, and still answers six months after launch.</p>
-      </div>
-    </div>
-    <div class="swap r">
-      <div class="swap-cell"><span class="swap-old">Open-ended quote</span><span class="swap-new">Fixed price</span></div>
-      <div class="swap-cell"><span class="swap-old">Months of waiting</span><span class="swap-new">Weeks to live</span></div>
-      <div class="swap-cell"><span class="swap-old">A slide deck</span><span class="swap-new">Working software</span></div>
-      <div class="swap-cell"><span class="swap-old">Passed between teams</span><span class="swap-new">One direct line</span></div>
-      <div class="swap-cell"><span class="swap-old">Promises</span><span class="swap-new">A live example</span></div>
-      <div class="swap-cell"><span class="swap-old">Gone after launch</span><span class="swap-new">Still here after launch</span></div>
-    </div>
+<dialog class="shots-dialog" id="shots" aria-labelledby="shots-t">
+  <div class="sd-head"><h2 id="shots-t">The guest app, screen by screen</h2><button class="btn btn-line btn-sm" type="button" data-close-shots>Close</button></div>
+  <div class="sd-body">
+    <p class="sd-note">Real screens from a working demonstration I built for a bush lodge. The lodge's name, host, address, contact details and photos have been replaced with neutral placeholders and my own illustrations. The guests are sample people.</p>
+    <figure><div class="phone"><img src="/assets/img/guest-prep-780.webp" srcset="/assets/img/guest-prep-390.webp 390w, /assets/img/guest-prep-780.webp 780w" sizes="(min-width:1020px) 280px, (min-width:721px) 44vw, 80vw" width="780" height="1688" alt="Guest app home screen counting down to a stay: 8 days, 11 hours and 55 minutes, a Plan your arrival button and the start of a before-you-go checklist." loading="lazy" decoding="async"></div><figcaption><b>Welcome and preparation</b>A personal link for each booking. It counts down to arrival and gives a short before-you-go checklist.</figcaption></figure><figure><div class="phone"><img src="/assets/img/guest-arrive-780.webp" srcset="/assets/img/guest-arrive-390.webp 390w, /assets/img/guest-arrive-780.webp 780w" sizes="(min-width:1020px) 280px, (min-width:721px) 44vw, 80vw" width="780" height="1688" alt="Arrival-day screen reading Today you arrive, with a tip to arrive before sunset, a Directions button and the lodge address." loading="lazy" decoding="async"></div><figcaption><b>Arrival day</b>Directions, the address, a nudge to arrive before sunset, and check-in questions that go to the host in one tap.</figcaption></figure><figure><div class="phone"><img src="/assets/img/guest-stay-780.webp" srcset="/assets/img/guest-stay-390.webp 390w, /assets/img/guest-stay-780.webp 780w" sizes="(min-width:1020px) 280px, (min-width:721px) 44vw, 80vw" width="780" height="1688" alt="During-stay screen reading Day 2 of 4, with a Log a sighting button and a five-day weather forecast." loading="lazy" decoding="async"></div><figcaption><b>During the stay</b>Today's weather and plan, with a quick way to log a wildlife sighting.</figcaption></figure><figure><div class="phone"><img src="/assets/img/guest-wild-780.webp" srcset="/assets/img/guest-wild-390.webp 390w, /assets/img/guest-wild-780.webp 780w" sizes="(min-width:1020px) 280px, (min-width:721px) 44vw, 80vw" width="780" height="1688" alt="Wildlife passport screen showing 7 of 23 animals found, with giraffe and plains zebra discoveries ticked off." loading="lazy" decoding="async"></div><figcaption><b>Wildlife passport</b>Guests tick off the animals they have seen and add their own photos, which stay on their phone.</figcaption></figure><figure><div class="phone"><img src="/assets/img/guest-extra-780.webp" srcset="/assets/img/guest-extra-390.webp 390w, /assets/img/guest-extra-780.webp 780w" sizes="(min-width:1020px) 280px, (min-width:721px) 44vw, 80vw" width="780" height="1688" alt="Extras screen listing things a guest can ask the host for: airport transfer, braai pack, a meal and a game drive." loading="lazy" decoding="async"></div><figcaption><b>Extras from the host</b>Guests ask for a transfer, a meal or a game drive. The request opens in WhatsApp or email and the host confirms.</figcaption></figure><figure><div class="phone"><img src="/assets/img/guest-memories-780.webp" srcset="/assets/img/guest-memories-390.webp 390w, /assets/img/guest-memories-780.webp 780w" sizes="(min-width:1020px) 280px, (min-width:721px) 44vw, 80vw" width="780" height="1688" alt="Trip memories card summarising a stay: two photos, 7 species, 7 sightings and 4 discovery badges." loading="lazy" decoding="async"></div><figcaption><b>Trip memories</b>At the end, the app makes a memories card on the guest's phone: a real image to keep or share.</figcaption></figure>
   </div>
-</section>
+</dialog>
 
-<!-- PLATFORMS -->
-<section id="platforms" class="sec">
+<section class="sec" id="work" aria-labelledby="work-h">
   <div class="wrap">
-    <div class="sec-hd">
-      <div class="eyebrow r">Ready today</div>
-      <h2 class="h2 r d1">Two ready-made products. <em>Set up for you, not built from zero.</em></h2>
-      <p class="lede r d2">BuildTrack and LoadKit already run real businesses. I set them up with your name, your branding and your way of working, and <strong>you're live in weeks</strong>, not months.</p>
-    </div>
+    <p class="kicker">Selected work</p>
+    <h2 class="h2" id="work-h">Other things I've built.</h2>
+    <p class="lede">Different industries, the same approach: find the real problem, then build something people actually use. Client names are left out on purpose.</p>
 
-    <div class="plat-grid">
-
-      <!-- BuildTrack -->
-      <article class="card plat r d1">
-        <div class="plat-vis" aria-hidden="true">
-          <div class="portal">
-            <div class="portal-top"><span class="portal-title">Your build</span><span class="portal-stage" id="stageLabel">Stage 6 of 9</span></div>
-            <div class="stages" id="stages"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="now"></i><i></i><i></i><i></i></div>
-            <div class="stage-labels"><span>Order</span><span>Production</span><span>Checked</span><span>Delivered</span></div>
-            <div class="portal-rows">
-              <div class="portal-chip">Photos<b class="ok">Approved</b></div>
-              <div class="portal-chip">Deposit<b class="ok">Paid</b></div>
-              <div class="portal-chip">Balance<b>On delivery</b></div>
-            </div>
-          </div>
-        </div>
-        <div class="plat-body">
-          <div>
-            <div class="plat-top"><h3 class="plat-name">BuildTrack</h3><span class="plat-time">Live in 4-6 weeks</span></div>
-            <p class="plat-tag">Lets your customers follow their order online. For businesses that make things to order: furniture, kitchens, pools, anything bespoke.</p>
-          </div>
-          <ul class="feats">
-            <li>Each customer gets a private link: no app to install, no password</li>
-            <li>A nine-step progress timeline they can check any time</li>
-            <li>You approve every photo before the customer sees it</li>
-            <li>Quote, deposit and balance always up to date</li>
-            <li>Workshop staff add photos by scanning a QR code, no login</li>
-            <li>Ready for several branches or a franchise</li>
-          </ul>
-          <div class="plat-proof"><div class="tagline"><span class="dot"></span>Already in use</div>Running today for a Cape Town manufacturer of premium wellness equipment: <strong>R50,000-R250,000+</strong> custom orders, 6-14 week builds. Support calls during the build dropped to zero.</div>
-          <dl class="price">
-            <div><dt>Setup</dt><dd>R80,000 to R120,000</dd></div>
-            <div><dt>Monthly</dt><dd>R6,000 to R10,000 <small>/ mo</small></dd></div>
-            <div class="wide"><dt>Year one</dt><dd>R152,000 to R240,000</dd></div>
-          </dl>
-          <div class="plat-foot">
-            <a href="#contact" class="btn btn-sm" data-need="A ready-made product" data-msg="I'm interested in BuildTrack. ">Ask about BuildTrack <span class="arr">→</span></a>
-            <span class="plat-note">Invoicing in USD/EUR available for international clients.</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- LoadKit -->
-      <article class="card plat r d2">
-        <div class="plat-vis">
-          <div class="phones">
-            <div class="phone front"><img src="swim-log.jpg" width="456" height="916" loading="lazy" alt="LoadKit running as SwimLoading: logging water temperature, conditions and hazards at a swim spot"></div>
-            <div class="phone back"><img src="swim-trends.jpg" width="459" height="876" loading="lazy" alt="LoadKit running as SwimLoading: regional water temperature trends"></div>
-          </div>
-        </div>
-        <div class="plat-body">
-          <div>
-            <div class="plat-top"><h3 class="plat-name">LoadKit</h3><span class="plat-time">Live in two weeks</span></div>
-            <p class="plat-tag">A community app under your own name. For clubs and activity groups: running, cycling, surf, dive, swim.</p>
-          </div>
-          <ul class="feats">
-            <li>Members log activities with location, conditions and hazards</li>
-            <li>Group events with sign-ups and safety checks</li>
-            <li>Challenges, leaderboards and streak badges</li>
-            <li>Phone alerts and hazard reports</li>
-            <li>Sponsor placements that offset your monthly cost</li>
-            <li>Works for adult clubs and junior squads: coaches, attendance, parent links</li>
-          </ul>
-          <div class="plat-proof"><div class="tagline"><span class="dot"></span>Already in use</div>Serves an open-water swimming community across <strong>16 countries</strong> and several clubs, including one with <strong>550+ active members</strong>, all on one shared platform.</div>
-          <dl class="price">
-            <div><dt>Setup</dt><dd>R25,000 to R60,000</dd></div>
-            <div><dt>Monthly</dt><dd>R3,000 to R8,000 <small>/ mo</small></dd></div>
-            <div class="wide"><dt>Year one</dt><dd>R61,000 to R156,000</dd></div>
-          </dl>
-          <div class="plat-foot">
-            <a href="#contact" class="btn btn-sm" data-need="A ready-made product" data-msg="I'm interested in LoadKit. ">Ask about LoadKit <span class="arr">→</span></a>
-            <span class="plat-note">Invoicing in USD/EUR available for international clients.</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="how" class="sec">
-  <div class="wrap">
-    <div class="sec-hd">
-      <div class="eyebrow r">How it works</div>
-      <h2 class="h2 r d1">From first conversation to launch. <em>And I'm still there afterwards.</em></h2>
-      <p class="lede r d2">I work inside your business, not at arm's length: with your team, your tools and your real information. Not a consultant who writes a report and leaves. <strong>It's how I work on every project.</strong></p>
-    </div>
-    <div class="steps r">
-      <div class="step">
-        <div class="step-n">01</div>
-        <h3 class="step-title">Understand the real problem</h3>
-        <p class="step-text">Most projects start with a rough idea. I sit with the people doing the work and find what's actually broken before building anything.</p>
-        <p class="step-proof"><span>Example</span>A brief to "clean up the data" became 55 specific checks that now run every day.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">02</div>
-        <h3 class="step-title">Build it where you work</h3>
-        <p class="step-text">The software is built around the tools and information you already use. Not a demo running on my laptop.</p>
-        <p class="step-proof"><span>Example</span>BuildTrack reads build progress and delivery dates straight from the Monday.com board a manufacturer already used.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">03</div>
-        <h3 class="step-title">Make it hold up in real life</h3>
-        <p class="step-text">Who can see what, a record of every change, alerts when something goes wrong, and screens designed for how the work really happens.</p>
-        <p class="step-proof"><span>Example</span>Crew check in from a moving boat with no login, and an alert goes out if a boat goes quiet.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">04</div>
-        <h3 class="step-title">Stay after launch</h3>
-        <p class="step-text">I run it, fix it and keep improving it. What I learn from one client makes the product better for the next.</p>
-        <p class="step-proof"><span>Example</span>An improvement built for one BuildTrack or LoadKit client reaches every client using it.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WORK -->
-<section id="work" class="work">
-  <div class="wrap">
-    <div class="sec-hd">
-      <div class="eyebrow r">Results</div>
-      <h2 class="h2 r d1">Seven systems running today. <em>One in testing.</em></h2>
-    </div>
-
-    <nav class="index r" aria-label="Case studies">
-      <a href="#case-01" style="--i:0"><span class="index-n">01</span><span class="index-name">Data checking</span></a>
-      <a href="#case-02" style="--i:1"><span class="index-n">02</span><span class="index-name">BuildTrack</span></a>
-      <a href="#case-03" style="--i:2"><span class="index-n">03</span><span class="index-name">LoadKit</span></a>
-      <a href="#case-04" style="--i:3"><span class="index-n">04</span><span class="index-name">Ocean-swim safety</span></a>
-      <a href="#case-05" style="--i:4"><span class="index-n">05</span><span class="index-name">Firm operations</span></a>
-      <a href="#case-06" style="--i:5"><span class="index-n">06</span><span class="index-name">Website rebuild</span></a>
-      <a href="#case-07" style="--i:6"><span class="index-n">07</span><span class="index-name">Observer Hub</span></a>
-      <a href="#case-08" style="--i:7" class="beta"><span class="index-n">08 · beta</span><span class="index-name">Investment research</span></a>
-    </nav>
-
-    <!-- 01: Data quality engine -->
-    <article class="case r" id="case-01">
-      <div>
-        <p class="case-kicker"><span class="case-n">01</span>Data checking system</p>
-        <h3 class="case-title">171,000 errors caught <em>before they reached the new system.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>A large company was moving to a new SAP system and needed its core business records checked first. No off-the-shelf tool covered the company's own rules, and nothing stopped bad records from going across.</dd></div>
-          <div><dt>Built</dt><dd>A checking system that runs 55 custom rules every day against 200,000 live records, scores them, and sends each problem to the person responsible for it. An AI layer turns the patterns into a plain-English report on what's going wrong and why.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>171,000 problems caught before launch.</strong> No outside vendor and no off-the-shelf tool. Built, launched and still running every day.</dd></div>
+    <article class="case" data-case="order-tracking">
+      <div class="case-vis rv"><figure class="mock" style="margin:0" aria-label="Illustrative preview of a customer order tracking page, using sample information">
+  <span class="mock-badge">Illustrative preview, sample data</span>
+  <p class="mock-co">Sample Kitchens</p>
+  <h4>Oak kitchen, 6 units</h4>
+  <p class="mock-sub">Stage 6 of 9: Finishing</p>
+  <div class="bar" aria-hidden="true"><i></i></div>
+  <ol><li class="done">Order confirmed</li><li class="done">Design approved</li><li class="done">Materials ordered</li><li class="done">Cutting</li><li class="done">Assembly</li><li class="now">Finishing</li><li class="">Quality check</li><li class="">Delivery booked</li><li class="">Delivered</li></ol>
+  <div class="mock-photo"><b>A photo is ready for your approval</b>The business checks every photo before you see it.</div>
+  <div class="mock-pay"><span>Deposit <b>paid</b></span><span>Balance <b>due on delivery</b></span></div>
+</figure></div>
+      <div class="rv">
+        <span class="tag">Delivered system</span>
+        <p class="case-for">For a Cape Town manufacturer of premium wellness equipment</p>
+        <h3>Customers follow their order online. The phone stopped ringing.</h3>
+        <dl class="beats">
+          <div><dt>What was hard</dt><dd>Each custom order takes six to fourteen weeks to build and can be worth R50,000 to R250,000 or more. Customers want to know how it's going.</dd></div>
+          <div><dt>What I built</dt><dd>A private page for each customer with a nine-step progress timeline, photos the business approves before the customer sees them, and the quote, deposit and balance. Workshop staff add photos by scanning a QR code.</dd></div>
+          <div class="result"><dt>What changed</dt><dd>Support calls during the build phase dropped to zero.</dd></div>
         </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>Daily checks</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="scan">
-          <div class="scan-row"><span class="scan-label">Nothing missing</span><span class="pill-s ok">Pass</span></div>
-          <div class="scan-row"><span class="scan-label">Records link up</span><span class="pill-s flag">Flagged</span></div>
-          <div class="scan-row"><span class="scan-label">Correct format</span><span class="pill-s ok">Pass</span></div>
-          <div class="scan-row"><span class="scan-label">No duplicates</span><span class="pill-s run">Checking</span></div>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n" data-count="55">55</div><div class="mc-l">Custom rules</div></div>
-          <div class="mc"><div class="mc-n c" data-count="200000" data-suffix="k" data-divisor="1000">200k</div><div class="mc-l">Records checked daily</div></div>
-          <div class="mc"><div class="mc-n" data-count="171000" data-suffix="k" data-divisor="1000">171k</div><div class="mc-l">Problems caught before launch</div></div>
-          <div class="mc"><div class="mc-n c" data-count="993">993</div><div class="mc-l">Data fields watched</div></div>
-        </div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Python</span><span class="ptag">Streamlit</span>
-            <span class="ptag">SAP S/4HANA</span><span class="ptag">GPT analysis</span>
-          </div>
-          <div class="panel-note">Enterprise SAP S/4HANA migration · live master-data validation across 993 columns · SAP ECC → KNIME → DQ engine → SAP remediation cockpit</div>
-        </details>
+        <p class="small muted" style="margin-top:14px">The screen on the left is an illustrative preview with sample information, not a screenshot of the client's system.</p>
+        <a href="/work/#order-tracking" data-case-link="order-tracking">Read more about this project</a>
       </div>
     </article>
 
-    <!-- 02: BuildTrack reference deployment -->
-    <article class="case r" id="case-02">
-      <div>
-        <p class="case-kicker"><span class="case-n">02</span>BuildTrack · in use today</p>
-        <h3 class="case-title">Customers follow their order online. <em>The phone stopped ringing.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>A manufacturer of premium wellness equipment had no way to show customers real progress on custom orders worth R50,000 to R250,000 and more. Every update was a phone call or an email.</dd></div>
-          <div><dt>Built</dt><dd>BuildTrack: each customer gets a private link to their own order page, with no app to install and no password. It shows nine build stages, workshop photos (approved before the customer sees them), and what's been paid and what's still owing. Workshop staff add photos by scanning a QR code.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>6-14 week builds, visible to the customer the whole way.</strong> Support calls during the build dropped to zero.</dd></div>
+    <article class="case flip" data-case="paperwork">
+      <div class="case-vis rv"><div class="stat"><b><span data-count="6">6</span> hours</b><span>of write-up saved for the observer after every swim</span></div></div>
+      <div class="rv">
+        <span class="tag">Delivered system</span>
+        <p class="case-for">For an open-water swimming ratification body</p>
+        <h3>The paperwork is done by the time the swim ends.</h3>
+        <dl class="beats">
+          <div><dt>What was hard</dt><dd>After every swim, the observer on the boat had to write up everything they had seen before the swim could be assessed.</dd></div>
+          <div><dt>What I built</dt><dd>An app that works offline on the boat. The observer records check-ins, feeds and incidents with time and location as they happen, and the evidence is assembled and sealed the moment the swim ends. The ratifying body reviews it and issues certificates in the same system.</dd></div>
+          <div class="result"><dt>What changed</dt><dd>It saves the observer six hours of write-up after every swim. I built it in eight days.</dd></div>
         </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>Nine build stages</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="flow">
-          <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Order</span></div>
-          <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Production</span></div>
-          <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Checked</span></div>
-          <div class="flow-step"><span class="flow-dot active"></span><span class="flow-label">Delivered</span></div>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n c" data-count="9">9</div><div class="mc-l">Build stages tracked</div></div>
-          <div class="mc"><div class="mc-n" data-count="0">0</div><div class="mc-l">Support calls during build</div></div>
-          <div class="mc"><div class="mc-n">6-14wk</div><div class="mc-l">Typical build time</div></div>
-          <div class="mc"><div class="mc-n c">R50k+</div><div class="mc-l">Custom order value</div></div>
-        </div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Next.js</span><span class="ptag">Supabase</span>
-            <span class="ptag">Magic-link auth</span><span class="ptag">Monday.com API</span>
-          </div>
-          <div class="panel-note">Magic-link customer portal · photo approval workflow · QR field uploads · real-time financials</div>
-        </details>
+        <a href="/work/#paperwork" data-case-link="paperwork">Read more about this project</a>
       </div>
     </article>
 
-    <!-- 03: LoadKit reference deployment -->
-    <article class="case r" id="case-03">
-      <div>
-        <p class="case-kicker"><span class="case-n">03</span>LoadKit · in use today</p>
-        <h3 class="case-title">One app, three clubs, <em>780 swimmers in 16 countries.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>Open water swimmers in South Africa had no shared place to check water conditions and hazards, no easy way to organise group swims, and no way to prove a qualifying swim really happened.</dd></div>
-          <div><dt>Built</dt><dd>LoadKit, running as SwimLoading. Swimmers check live conditions, log swims with GPS, organise group swims, and compete in challenges and leaderboards. An Evidence Tracker records the details of a qualifying swim (duration, water temperature, GPS, observer contact) as it's logged, so nobody has to piece it together by hand afterwards. The same app runs two very different kinds of club: an adult open-water club with league racing, and pool squads with coaches, attendance and parents, including a foundation-funded learn-to-swim programme that reports progress straight to its funder.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>Self-funded. Zero marketing. Built and grown solo.</strong> A Maurten sponsorship followed.</dd></div>
+    <article class="case" data-case="data-checking">
+      <div class="case-vis rv"><div class="stat"><b data-count="171000">171,000</b><span>data errors caught before they reached the new system</span></div></div>
+      <div class="rv">
+        <span class="tag">Delivered system</span>
+        <p class="case-for">For a large enterprise moving to a new SAP system</p>
+        <h3>Problems found in the old data before they became problems in the new system.</h3>
+        <dl class="beats">
+          <div><dt>What was hard</dt><dd>A company moving to a new system has to be sure its existing data is clean first. Nobody can check that by hand.</dd></div>
+          <div><dt>What I built</dt><dd>55 automatic checks that run every day against the live data, with reports that explain in plain English where each kind of problem comes from.</dd></div>
+          <div class="result"><dt>What changed</dt><dd>171,000 issues were found before go-live.</dd></div>
         </dl>
-        <blockquote class="quote">
-          <p>"Verifying my day conditions with an unbelievable app. Check it out, swimmers."</p>
-          <cite>Jolanda C. · open water swimmer, SA community</cite>
-        </blockquote>
+        <a href="/work/#data-checking" data-case-link="data-checking">Read more about this project</a>
       </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>Where the swimmers are</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="world-map"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+    </article>
+    <p><a class="btn btn-line" href="/work/">See all selected work</a></p>
+  </div>
+</section>
+<section class="sec dark reach" id="reach" aria-labelledby="reach-h">
+  <div class="wrap">
+    <div class="reach-head rv">
+      <p class="kicker">Where my work runs</p>
+      <h2 class="h2" id="reach-h" data-split>From Cape Town to 16 countries.</h2>
+      <p class="lede">One of the apps I built is used by 780 swimmers in 16 countries, across three clubs, all on one shared platform. Software built in Cape Town can look after people anywhere.</p>
+    </div>
+    <div class="map-wrap rv"><div class="world-map"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dot map of the world. Lines run from South Africa to the 16 countries where swimmers use the community app.">
 <g class="wm-dots">
 <circle cx="40.8" cy="21.2" r="1.3"/>
 <circle cx="46.7" cy="21.2" r="1.3"/>
@@ -2630,499 +1590,82 @@ footer a:hover{color:var(--accent)}
 <circle cx="43.1" cy="133.4" r="3"><title>Hawaii</title></circle>
 </g>
 </svg></div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n c" data-count="780">780</div><div class="mc-l">Swimmers on the platform</div></div>
-          <div class="mc"><div class="mc-n" data-count="16">16</div><div class="mc-l">Countries</div></div>
-        </div>
-        <div class="panel-note plain">Live on iPhone and Android · 3 clubs on one platform · self-funded and built solo</div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">React Native</span><span class="ptag">GPS logging</span>
-            <span class="ptag">Multi-club</span><span class="ptag">Maurten sponsor</span>
-          </div>
-          <div class="panel-note">90s prediction accuracy on a 15km ocean swim · one codebase for open-water and pool-squad clubs · iOS &amp; Android</div>
-        </details>
-      </div>
-    </article>
-
-    <!-- 04: Ocean-swim operations platform -->
-    <article class="case r" id="case-04">
-      <div>
-        <p class="case-kicker"><span class="case-n">04</span>Ocean-swim safety and operations</p>
-        <h3 class="case-title">Coordinating boats and crew, <em>safely, from a phone at sea.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>A Cape Town ocean-swim business was coordinating boats, crew and swimmers by phone and spreadsheet. There was no shared view of who was where, and no way for a family to know if a swimmer was safe mid-swim.</dd></div>
-          <div><dt>Built</dt><dd>A live operations system: swims are scheduled around weather windows, 11 kinds of incident can be logged, and an alert goes out automatically if a boat goes quiet. Families get a live tracking page that shows far more than a dot on a map: <strong>position against the planned route, pace and stroke-rate charts, water temperature, and a running feed of check-ins from the crew.</strong></dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>Live since July 2026.</strong> Designed for cold, wet gloves on a moving deck, not for an office.</dd></div>
-        </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>Live tracking, not just a dot on a map</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="route">
-          <div class="route-hd"><span class="route-label">Position vs. planned route</span><span class="route-pct">99%</span></div>
-          <div class="route-bar"><div class="route-fill"></div></div>
-          <div class="route-pills">
-            <span class="pill-s ok">Strong</span>
-            <span class="pill-s run">Steady</span>
-            <span class="pill-s flag">Tired</span>
-            <span class="pill-s run">Logged</span>
-          </div>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n c" data-count="11">11</div><div class="mc-l">Incident types tracked</div></div>
-          <div class="mc"><div class="mc-n" data-count="4">4</div><div class="mc-l">Conditions zones monitored</div></div>
-          <div class="mc"><div class="mc-n">No login</div><div class="mc-l">Crew check in from the boat</div></div>
-          <div class="mc"><div class="mc-n c">Live</div><div class="mc-l">Since July 2026</div></div>
-        </div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Next.js 16</span><span class="ptag">Supabase</span>
-            <span class="ptag">Open-Meteo API</span><span class="ptag">Safety-critical UX</span>
-          </div>
-          <div class="panel-note">18 database tables · no-login check-ins from the boat · automatic overdue-mission alerts</div>
-        </details>
-      </div>
-    </article>
-
-    <!-- 05: Consulting operations platform -->
-    <article class="case r" id="case-05">
-      <div>
-        <p class="case-kicker"><span class="case-n">05</span>Operations system for a consulting firm</p>
-        <h3 class="case-title">Timesheets, leave and expenses, <em>all in one place.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>A consulting firm was running projects, timesheets, leave and expenses across spreadsheets, email chains and tools that didn't connect. Nothing talked to anything else.</dd></div>
-          <div><dt>Built</dt><dd>One internal system with 14 tools: timesheets that follow the firm's billing rules and send automatic reminders, projects, leave, expenses, a skills and staffing search, onboarding and assessments. Each person sees only what their role allows, every change is recorded, and it works on a phone.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>14 tools live in one system</strong>, designed, built and launched by one person.</dd></div>
-        </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>What's inside</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="wire">
-          <div class="mw-row"><span class="mw-label">Timesheets</span><span class="mw-track"><span class="mw-bar" style="width:74%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Projects</span><span class="mw-track"><span class="mw-bar" style="width:58%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Leave</span><span class="mw-track"><span class="mw-bar" style="width:34%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Expenses</span><span class="mw-track"><span class="mw-bar" style="width:47%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Skills</span><span class="mw-track"><span class="mw-bar" style="width:61%"></span></span></div>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n c" data-count="14">14</div><div class="mc-l">Tools in one system</div></div>
-          <div class="mc"><div class="mc-n">Solo</div><div class="mc-l">Designed, built and launched</div></div>
-        </div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Next.js 14</span><span class="ptag">Supabase</span>
-            <span class="ptag">TypeScript</span><span class="ptag">Role-based access</span>
-          </div>
-          <div class="panel-note">53 page routes · 44 API endpoints · 51 database tables · audit-logged · invoicing-grade billing rules</div>
-        </details>
-      </div>
-    </article>
-
-    <!-- 06: Website rebuild -->
-    <article class="case r" id="case-06">
-      <div>
-        <p class="case-kicker"><span class="case-n">06</span>Website rebuild</p>
-        <h3 class="case-title">A faster website <em>that AI assistants can actually read.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>A professional-services firm's WordPress site was slow, hard to maintain, and close to invisible to AI assistants like ChatGPT, which read a page differently from people. The firm had also just been hit by email spoofing on the old host: fake emails sent in its name.</dd></div>
-          <div><dt>Built</dt><dd>The same 22 pages, same brand and same wording, rebuilt on a faster foundation. I added the labels and files that tell search engines and AI assistants exactly what the firm does, and tightened the firm's email settings so its address is much harder to fake.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>The same site, faster and easier for search engines and AI assistants to understand.</strong> This page is built the same way.</dd></div>
-        </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>The move</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="migrate">
-          <span class="migrate-chip from">Old WordPress site</span>
-          <span class="migrate-arrow">→</span>
-          <span class="migrate-chip to">Fast new site</span>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n" data-count="22">22</div><div class="mc-l">Pages moved, like for like</div></div>
-          <div class="mc"><div class="mc-n c sm">AI-ready</div><div class="mc-l">Readable by ChatGPT, Claude and Perplexity</div></div>
-          <div class="mc"><div class="mc-n sm">Same</div><div class="mc-l">Brand and wording kept</div></div>
-          <div class="mc"><div class="mc-n c sm">Secured</div><div class="mc-l">Email protected after the spoofing incident</div></div>
-        </div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Next.js</span><span class="ptag">Schema.org</span>
-            <span class="ptag">llms.txt</span><span class="ptag">AI-crawler ready</span>
-          </div>
-          <div class="panel-note">1:1 migration from WordPress / Divi · schema.org markup · llms.txt · explicit access for GPTBot, ClaudeBot and PerplexityBot · hardened SPF/DMARC</div>
-        </details>
-      </div>
-    </article>
-
-    <!-- 07: Observer Hub -->
-    <article class="case r" id="case-07">
-      <div>
-        <p class="case-kicker"><span class="case-n">07</span>Observer Hub · swim record verification</p>
-        <h3 class="case-title">Six hours of paperwork saved <em>after every swim.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>For a long-distance swim to be officially recognised, an observer has to record what happened. That was usually written up by hand after the swim, then reviewed by an official body that had to take most of it on trust.</dd></div>
-          <div><dt>Built</dt><dd>Observer Hub: the observer opens a link on the boat, with nothing to install, and it keeps working without signal. Check-ins, feeds, attire and incidents are each stamped with the time and location. The official body has its own review area to question the observer, record its decision and issue the certificate.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>Saves the observer 6 hours of write-up after every swim.</strong> The record is locked the moment the swim ends, and nothing in it can be quietly changed: a correction is saved as a new version, with a reason.</dd></div>
-        </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>From the water to a decision</span><span class="status"><span class="dot"></span>Live</span></div>
-        <div class="flow">
-          <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Record</span></div>
-          <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Evidence</span></div>
-          <div class="flow-step"><span class="flow-dot"></span><span class="flow-label">Locked</span></div>
-          <div class="flow-step"><span class="flow-dot active"></span><span class="flow-label">Decision</span></div>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n c">6 hrs</div><div class="mc-l">Write-up saved per swim</div></div>
-          <div class="mc"><div class="mc-n" data-count="8">8</div><div class="mc-l">Days from first line to current version</div></div>
-          <div class="mc"><div class="mc-n c sm">Locked</div><div class="mc-l">Records can't be quietly edited</div></div>
-          <div class="mc"><div class="mc-n sm">Offline</div><div class="mc-l">Keeps working without signal</div></div>
-        </div>
-        <div class="panel-note plain">See it live at <a href="https://observerhub.vercel.app" target="_blank" rel="noopener">observerhub.vercel.app</a></div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Next.js 16</span><span class="ptag">Supabase</span>
-            <span class="ptag">Offline PWA</span><span class="ptag">Automated tests</span>
-          </div>
-          <div class="panel-note">SHA-256 sealed evidence packages · append-only audit log · 26 database tables · first ratifying body configured</div>
-        </details>
-      </div>
-    </article>
-
-    <!-- 08: Investment intelligence platform (early access) -->
-    <article class="case r" id="case-08">
-      <div>
-        <p class="case-kicker"><span class="case-n">08</span>Investment research · private beta</p>
-        <h3 class="case-title">Decades of investment judgment, <em>turned into a working system.</em></h3>
-        <dl class="pbr">
-          <div><dt>Problem</dt><dd>Two investment experts had decades of judgment about what shares are worth, locked in spreadsheets and memory. None of it was backed by evidence in one place, and nothing ran continuously.</dd></div>
-          <div><dt>Built</dt><dd>A valuation system for the share market. It brings together market and company data, price-to-earnings history back to 1960, earnings forecasts and analyst expectations into one evidence-based view, where every conclusion can be traced back to the data behind it.</dd></div>
-          <div class="res"><dt>Result</dt><dd><strong>3,200 historical valuation records across 4 market indices</strong>, in private use with the two experts, ahead of a licensed live market-data feed.</dd></div>
-        </dl>
-      </div>
-      <div class="card panel">
-        <div class="panel-hd"><span>Early access</span><span class="status"><span class="dot warn"></span>Private beta</span></div>
-        <div class="wire">
-          <div class="mw-row"><span class="mw-label">All Share</span><span class="mw-track"><span class="mw-bar" style="width:68%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Resources</span><span class="mw-track"><span class="mw-bar" style="width:52%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Industrials</span><span class="mw-track"><span class="mw-bar" style="width:71%"></span></span></div>
-          <div class="mw-row"><span class="mw-label">Financials</span><span class="mw-track"><span class="mw-bar" style="width:44%"></span></span></div>
-        </div>
-        <div class="metric-grid">
-          <div class="mc"><div class="mc-n c" data-count="3200">3,200</div><div class="mc-l">Valuation records, 1960-2026</div></div>
-          <div class="mc"><div class="mc-n" data-count="4">4</div><div class="mc-l">Market indices tracked</div></div>
-          <div class="mc"><div class="mc-n c" data-count="2">2</div><div class="mc-l">Experts using it privately</div></div>
-          <div class="mc"><div class="mc-n">Next</div><div class="mc-l">Licensed live data feed</div></div>
-        </div>
-        <details class="tech">
-          <summary>Technical detail</summary>
-          <div class="panel-tags">
-            <span class="ptag">Next.js</span><span class="ptag">TypeScript</span>
-            <span class="ptag">Supabase</span><span class="ptag">Quant / valuation</span>
-          </div>
-          <div class="panel-note">J203 · J258 · J257 · J580 · 3,200 PE observations · historical PE ranges back to 1960</div>
-        </details>
-      </div>
-    </article>
-
+</div>
+    <p class="cap" style="max-width:none">Each lit dot is a country where swimmers use the app. Home is South Africa.</p>
   </div>
 </section>
-
-<!-- FAQ -->
-<section id="faq" class="sec">
+<section class="sec alt" id="services" aria-labelledby="svc-h">
   <div class="wrap">
-    <div class="sec-hd">
-      <div class="eyebrow r">Questions</div>
-      <h2 class="h2 r d1">Questions. <em>Straight answers.</em></h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item r">
-        <h3 class="faq-q">I only have an idea. Can we start there?</h3>
-        <p class="faq-a">Yes, most projects start that way. Tell me what you want it to do and who it's for, in plain words. I work out what's needed with you, then quote for it.</p>
-      </div>
-      <div class="faq-item r d1">
-        <h3 class="faq-q">Do I need to be technical?</h3>
-        <p class="faq-a">No. You describe the problem. I make the technical decisions and explain the ones that matter in plain language.</p>
-      </div>
-      <div class="faq-item r">
-        <h3 class="faq-q">What does it cost?</h3>
-        <p class="faq-a">BuildTrack: <strong>R80,000-R120,000</strong> setup + R6,000-R10,000 a month. LoadKit: <strong>R25,000-R60,000</strong> setup + R3,000-R8,000 a month. Custom builds are quoted after a short call. Prices are in South African Rand; invoicing in USD/EUR is available for international clients.</p>
-      </div>
-      <div class="faq-item r d1">
-        <h3 class="faq-q">How fast can we go live?</h3>
-        <p class="faq-a">LoadKit in two weeks, BuildTrack in 4-6 weeks. Both are set up for you, not built from zero. Custom builds depend on size; most take 2-4 months.</p>
-      </div>
-      <div class="faq-item r">
-        <h3 class="faq-q">Do you only build what's on this page?</h3>
-        <p class="faq-a">No. The two products are ready-made, but most of the work shown here was built to order: data checking, internal operations systems, safety systems for people at sea. If your business needs software that has to work every day, it's in scope.</p>
-      </div>
-      <div class="faq-item r d1">
-        <h3 class="faq-q">Who actually builds it?</h3>
-        <p class="faq-a">One person: me. No account managers and no handoff between teams. You deal directly with the person doing the work, who still answers six months after launch.</p>
-      </div>
-      <div class="faq-item r">
-        <h3 class="faq-q">What happens after launch?</h3>
-        <p class="faq-a">I stay on. For a monthly fee I run it, fix what breaks and keep improving it, and you can still reach me directly.</p>
-      </div>
-      <div class="faq-item r d1">
-        <h3 class="faq-q">Do you work with clients outside South Africa?</h3>
-        <p class="faq-a">Yes. I'm based in Cape Town and work remotely across time zones. I reply the same business day.</p>
-      </div>
-      <div class="faq-item r">
-        <h3 class="faq-q">What is a forward deployed engineer?</h3>
-        <p class="faq-a">It's the name for how I work: inside your business rather than at a distance. I work out the real problem with your team, build against your own tools and information, make it solid enough for daily use, and <strong>stay on after launch</strong>.</p>
-      </div>
-    </div>
+    <p class="kicker">What I can build for your business</p>
+    <h2 class="h2" id="svc-h">Start with the problem. The software comes after.</h2>
+    <ol class="svc-list"><li class="svc rv"><span class="svc-n">1</span><div><p class="prob">Customers can't find what they need on your website.</p><h3>Websites that help customers take the next step</h3></div><p>A site that does more than look good: it answers questions, takes enquiries and gives people a clear next move.</p></li><li class="svc rv"><span class="svc-n">2</span><div><p class="prob">Customers keep calling to ask where things are.</p><h3>Customer portals and guest experiences</h3></div><p>A private page or app where customers follow their order, manage a booking or get what they need before they have to ask.</p></li><li class="svc rv"><span class="svc-n">3</span><div><p class="prob">The same work gets done by hand, again and again.</p><h3>Business automation and connected workflows</h3></div><p>Your tools talk to each other, so information is entered once and routine steps happen on their own.</p></li><li class="svc rv"><span class="svc-n">4</span><div><p class="prob">You can't see what's happening without asking around.</p><h3>Internal tools, reporting and dashboards</h3></div><p>One place for jobs, timesheets, approvals and reports, built around how your team actually works.</p></li><li class="svc rv"><span class="svc-n">5</span><div><p class="prob">Your members, clients or community are scattered.</p><h3>Apps for communities and service businesses</h3></div><p>Sign-ups, events, updates and records in one app, under your own name.</p></li></ol>
+    <div class="after-list rv"><p>If you run a made-to-order business or a club, I also have two ready-made products that get you live sooner. <a href="/services/#ready-made">See the ready-made products</a>, or <a href="/services/">read more about each service</a>.</p></div>
   </div>
 </section>
-
-<!-- ABOUT -->
-<section id="about" class="sec">
-  <div class="wrap about-grid">
-    <div class="about-copy">
-      <div class="eyebrow r">About</div>
-      <h2 class="h2 r">One person. <em>From first call to long after launch.</em></h2>
-      <p class="r d1">I'm a solo builder, <strong>not an agency</strong>. You work with the person who makes every decision, does the work and still answers six months after you've gone live.</p>
-      <p class="r d2">My background runs from <strong>data work for very large companies</strong> (lead on Africa's largest SAP Retail rollout) to phone apps with real users, built and grown on my own. I know what it takes to get software from an idea to something people use every day, and to keep it working.</p>
-      <p class="r d3">Based in <strong>Cape Town.</strong> Available for contract work, from a first rough brief through to software that's live, stable and working.</p>
-    </div>
-    <div class="card sheet r d2">
-      <div class="sheet-hd">Working with me</div>
-      <dl>
-        <div><dt>Based</dt><dd>Cape Town, South Africa</dd></div>
-        <div><dt>Team</dt><dd>One person, no handoffs</dd></div>
-        <div><dt>Clients</dt><dd>Remote, any time zone</dd></div>
-        <div><dt>Response</dt><dd>Same business day</dd></div>
-        <div><dt>Terms</dt><dd>Contract build, monthly support</dd></div>
-        <div><dt>Invoicing</dt><dd>ZAR, USD or EUR</dd></div>
-      </dl>
-      <details class="tech">
-        <summary>Tools I build with</summary>
-        <div class="stack">
-          <span class="stag">React Native</span>
-          <span class="stag">React / Next.js</span>
-          <span class="stag">Python</span>
-          <span class="stag">Node.js</span>
-          <span class="stag">Supabase / Postgres</span>
-          <span class="stag">SAP S/4HANA</span>
-          <span class="stag">Data quality / ETL</span>
-          <span class="stag">LLM integration</span>
-          <span class="stag">Data migration</span>
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
+<section class="sec" id="process" aria-labelledby="proc-h">
   <div class="wrap">
-    <div class="eyebrow r">Start a conversation</div>
-    <h2 class="r d1">Got something that needs <em>building?</em></h2>
-    <p class="contact-sub r d2">Tell me about it in plain words. A rough idea is enough to start, and you don't need a technical brief.</p>
-    <div class="contact-grid">
-      <div class="next r d2">
-        <h3 class="next-title">What happens next</h3>
-        <ol class="next-list">
-          <li>I reply the same business day.</li>
-          <li>We have a short call about what you need.</li>
-          <li>You get a price and a timeline.</li>
-        </ol>
-        <p class="next-or">Or email me directly</p>
-        <div class="contact-act">
-          <a href="mailto:dave@apploading.co" class="btn btn-ghost contact-email">dave@apploading.co</a>
-          <button type="button" class="btn btn-ghost contact-email copy" id="copyEmail" data-email="dave@apploading.co">Copy address</button>
-        </div>
-      </div>
-
-      <form class="card enq r d3" action="mailto:dave@apploading.co" method="post" enctype="text/plain">
-        <h3 class="enq-title">Tell me what you need</h3>
-        <p class="enq-sub">I reply the same business day.</p>
-        <label class="fld"><span>Your name</span><input type="text" name="name" autocomplete="name" required maxlength="120"></label>
-        <label class="fld"><span>Email</span><input type="email" name="email" autocomplete="email" required maxlength="200"></label>
-        <fieldset class="chips">
-          <legend>What are you looking for?</legend>
-          <div class="chip-row">
-            <label><input type="radio" name="need" value="A ready-made product"><span>A ready-made product</span></label>
-            <label><input type="radio" name="need" value="Something custom"><span>Something custom</span></label>
-            <label><input type="radio" name="need" value="Help with an existing app"><span>Help with an existing app</span></label>
-            <label><input type="radio" name="need" value="Not sure yet"><span>Not sure yet</span></label>
-          </div>
-        </fieldset>
-        <label class="fld"><span>About your project</span><textarea name="message" rows="4" required minlength="5" maxlength="4000" placeholder="What should it do, and who is it for?"></textarea></label>
-        <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-        <button type="submit" class="btn enq-btn">Send message <span class="arr">→</span></button>
-        <p class="enq-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
+    <p class="kicker">How we'd work together</p>
+    <h2 class="statement" id="proc-h" data-lit>You don't have to arrive with the solution. Show me how your business works, and I can help work out what would make it better.</h2>
+    <ol class="steps"><li class="rv"><h3>Tell me how things work today</h3><p>A short conversation, in your words. No brief needed.</p></li><li class="rv"><h3>We find a useful first improvement</h3><p>Often it's smaller than you'd expect. We pick the thing that would help most.</p></li><li class="rv"><h3>You get a defined scope, price and timeline</h3><p>In writing, before anything is built.</p></li><li class="rv"><h3>I build it with your feedback</h3><p>You see it taking shape, and what you say steers it.</p></li><li class="rv"><h3>I help you launch it and stay on</h3><p>Launch support first, then ongoing care if you want it.</p></li></ol>
   </div>
 </section>
-
+<section class="sec alt" id="about" aria-labelledby="ab-h">
+  <div class="wrap about">
+    <div class="rv">
+      <p class="kicker">The person behind the work</p>
+      <h2 class="h2" id="ab-h">You deal with me, not a team.</h2>
+      <p class="lede">I'm Dave, an independent builder based in Cape Town. I work with businesses locally and around the world.</p>
+      <p>You talk to the person who works out the problem and builds the solution, and who's still there after launch. My background runs from data work for very large companies, including leading Africa's largest SAP Retail rollout, to phone apps with real users that I built and grew on my own.</p>
+      <p>What I'm good at is listening to how a business really runs, spotting what would help, and building something people actually use.</p>
+      <p><a href="/about/">More about how I work</a></p>
+    </div>
+    <dl class="facts rv">
+      <div><dt>Based in</dt><dd>Cape Town, South Africa</dd></div>
+      <div><dt>Works with</dt><dd>Clients locally and abroad</dd></div>
+      <div><dt>Who builds it</dt><dd>Me, from start to finish</dd></div>
+      <div><dt>Replies</dt><dd>Same business day</dd></div>
+      <div><dt>Invoices in</dt><dd>ZAR, USD or EUR</dd></div>
+    </dl>
+  </div>
+</section>
+<section class="sec enquire" id="enquire" aria-labelledby="enq-h">
+  <div class="wrap enq-grid">
+    <div class="rv">
+      <p class="kicker">Start a conversation</p>
+      <h2 class="h2" id="enq-h">What do you wish your business could do more easily?</h2>
+      <p class="lede">You don't need a brief, a budget or the right words. Tell me what's taking up your time, or what you'd like to be easier, and I'll take it from there.</p>
+      <ol class="next-list">
+        <li>I read your message myself and reply, usually the same business day.</li>
+        <li>We have a short conversation about how your business works today.</li>
+        <li>If there's a useful first improvement, you get a defined scope, price and timeline in writing. If not, I'll say so.</li>
+      </ol>
+      <p class="mail-line">Prefer email? Write to <a href="mailto:dave@apploading.co">dave@apploading.co</a>.</p>
+    </div>
+    <div class="rv"><form class="enq" id="home-form" data-form="home" action="mailto:dave@apploading.co" method="post" enctype="text/plain" aria-labelledby="home-t">
+  <h3 id="home-t">Tell me what's slowing you down</h3>
+  <p class="help">A rough description is enough. No technical words needed.</p>
+  <div class="fld"><label for="home-name">Your name</label><input id="home-name" name="name" type="text" autocomplete="name" required></div>
+  <div class="fld"><label for="home-email">Email</label><input id="home-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+  <div class="fld"><label for="home-biz">Business name <span class="opt">(optional)</span></label><input id="home-biz" name="business" type="text" autocomplete="organization"></div>
+  <div class="fld"><label for="home-msg">What's taking up your time, or what would you like to improve?</label><textarea id="home-msg" name="message" rows="5" required></textarea><p class="hint">A few rough lines is plenty. I'll ask the right questions.</p></div>
+  <div class="hp" aria-hidden="true"><label>Leave this empty <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+  <button class="btn" type="submit">Send to Dave</button>
+  <p class="enq-status" role="status" aria-live="polite"></p>
+</form></div>
+  </div>
+</section>
 </main>
-
-<footer>
-  <div class="wrap foot-inner">
-    <span>apploading.co · Cape Town, ZA · © 2026</span>
-    <div class="foot-links">
-      <a href="mailto:dave@apploading.co">dave@apploading.co</a>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p><strong style="color:var(--ink)">apploading.co</strong></p>
+      <p>Dave Welensky, independent builder. Cape Town, South Africa. Working with businesses locally and internationally.</p>
+      <p><a href="mailto:dave@apploading.co">dave@apploading.co</a></p>
     </div>
+    <ul aria-label="Pages"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/work/">Work</a></li><li><a href="/guest-app-for-lodges/">Customer apps</a></li><li><a href="/about/">About and contact</a></li></ul>
+    <p>&copy; 2026 apploading.co</p>
   </div>
 </footer>
-
-<script>
-(() => {
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const $ = (s, el = document) => el.querySelector(s);
-  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-
-  // ── Scroll "loading" bar in the nav
-  const bar = $('#navBar'), load = $('#load');
-  let ticking = false;
-  function progress() {
-    const max = document.documentElement.scrollHeight - innerHeight;
-    const p = max > 0 ? Math.min(scrollY / max, 1) : 0;
-    bar.style.transform = `scaleX(${p})`;
-    const done = p > 0.995;
-    load.textContent = done ? 'loaded' : Math.round(p * 100) + '%';
-    load.classList.toggle('done', done);
-    ticking = false;
-  }
-  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(progress); } }, { passive: true });
-  addEventListener('resize', progress);
-  progress();
-
-  // ── Scroll reveal
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
-  $$('.r').forEach(el => io.observe(el));
-
-  // ── Count-up animation for stats
-  const easeOut = t => 1 - Math.pow(1 - t, 3);
-  function countUp(el) {
-    const target = parseInt(el.dataset.count, 10);
-    const div = parseFloat(el.dataset.divisor) || 1;
-    const suffix = el.dataset.suffix || '';
-    if (isNaN(target) || reduce) return;
-    const fmt = v => Math.round(v / div).toLocaleString('en-US') + suffix;
-    const start = performance.now(), dur = 1500;
-    (function tick(now) {
-      const p = Math.min((now - start) / dur, 1);
-      el.textContent = fmt(easeOut(p) * target);
-      if (p < 1) requestAnimationFrame(tick);
-    })(start);
-  }
-  const cio = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { $$('[data-count]', e.target).forEach(countUp); cio.unobserve(e.target); }
-    });
-  }, { threshold: 0.4 });
-  $$('.panel').forEach(p => cio.observe(p));
-
-  // ── Current section in the nav
-  const links = $$('.nav-links a[href^="#"]:not(.btn)');
-  const sio = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
-    });
-  }, { rootMargin: '-45% 0px -50% 0px' });
-  links.forEach(a => { const s = $(a.getAttribute('href')); if (s) sio.observe(s); });
-
-  // ── Platform card spotlight
-  $$('.plat').forEach(card => {
-    card.addEventListener('pointermove', e => {
-      const b = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (e.clientX - b.left) + 'px');
-      card.style.setProperty('--my', (e.clientY - b.top) + 'px');
-    });
-  });
-
-  // ── Copy email
-  const copy = $('#copyEmail');
-  if (copy) copy.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(copy.dataset.email);
-      copy.textContent = 'Copied';
-      copy.classList.add('ok');
-    } catch { copy.textContent = copy.dataset.email; }
-    setTimeout(() => { copy.textContent = 'Copy address'; copy.classList.remove('ok'); }, 2200);
-  });
-
-  // ── Enquiry forms: send through /api/contact; if that fails, hand the
-  //    message to the visitor's own email app so nothing is lost
-  const MAIL = 'dave@apploading.co';
-  $$('form.enq').forEach(f => {
-    const status = $('.enq-status', f), btn = $('button[type=submit]', f);
-    const label = btn.innerHTML;
-    f.addEventListener('submit', async e => {
-      e.preventDefault();
-      const d = Object.fromEntries(new FormData(f));
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
-      status.className = 'enq-status';
-      status.textContent = '';
-      try {
-        const r = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(d)
-        });
-        if (!r.ok) throw new Error(r.status);
-        f.reset();
-        status.classList.add('ok');
-        status.textContent = 'Thanks, your message is on its way. I reply the same business day.';
-      } catch {
-        const body = d.message + '\n\n' + d.name + (d.need ? '\nLooking for: ' + d.need : '');
-        const href = 'mailto:' + MAIL + '?subject=' + encodeURIComponent('Project enquiry from ' + d.name) + '&body=' + encodeURIComponent(body);
-        const a = document.createElement('a');
-        a.href = href;
-        a.textContent = 'Open it in your email app';
-        status.classList.add('err');
-        status.append("That didn't send from here. ", a, ', or write to ' + MAIL + '.');
-        a.click();
-      } finally {
-        btn.disabled = false;
-        btn.innerHTML = label;
-      }
-    });
-  });
-
-  // ── Links that open the contact form with the right option already picked
-  $$('a[data-need]').forEach(a => a.addEventListener('click', () => {
-    const f = $('#contact form.enq');
-    if (!f) return;
-    const pick = $$('input[name=need]', f).find(i => i.value === a.dataset.need);
-    if (pick) pick.checked = true;
-    const msg = $('textarea', f);
-    if (a.dataset.msg && !msg.value.trim()) msg.value = a.dataset.msg;
-  }));
-
-  if (reduce) return;
-
-  // run a looping animation only while its element is on screen
-  function whileVisible(el, start, stop) {
-    new IntersectionObserver(([e]) => e.isIntersecting ? start() : stop(), { threshold: 0.15 }).observe(el);
-  }
-
-  // ── BuildTrack card: the nine-stage timeline advancing
-  const stages = $('#stages'), label = $('#stageLabel');
-  if (stages && label) {
-    const cells = $$('i', stages);
-    let n = 6, id = null;
-    const paint = () => {
-      n = n >= 9 ? 1 : n + 1;
-      cells.forEach((c, i) => { c.className = i < n - 1 ? 'on' : i === n - 1 ? 'now' : ''; });
-      label.textContent = n === 9 ? 'Delivered' : `Stage ${n} of 9`;
-    };
-    whileVisible(stages, () => { if (!id) id = setInterval(paint, 1500); }, () => { clearInterval(id); id = null; });
-  }
-})();
-</script>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

@@ -1,37 +1,36 @@
 # apploading.co
 
-> Software built and run in production by one Cape Town-based engineer. Two productized platforms, plus a track record of custom builds for data, operations and consumer products. Solo builder: no agency, no account managers.
+> Dave Welensky is an independent builder in Cape Town who builds websites, apps and practical tools that take repetitive work off a business and make life easier for its team and customers. One person, no agency: you deal directly with the person who works out the problem, builds the solution and supports it after launch.
 
-## Products
+## Who it's for
 
-- **BuildTrack**: customer-facing order tracking and production-management platform for make-to-order businesses (furniture, kitchens, pools, bespoke manufacturing). Magic-link customer portal, nine-stage build timeline, photo approval workflow, real-time financials, QR-code field uploads. Live in 4-6 weeks. Setup R80,000-R120,000, retainer R6,000-R10,000 per month.
-- **LoadKit**: white-label community and activity-logging platform for clubs and associations (running, cycling, surf, dive, open-water swimming). Location-based logging, group events with safety gates, challenges and leaderboards, push notifications, sponsor placements. Live in two weeks. Setup R25,000-R60,000, retainer R3,000-R8,000 per month.
+Business owners who spend their evenings on admin, answer the same customer questions repeatedly, chase updates, or run the business across disconnected spreadsheets, email and WhatsApp. They don't need to know what software they need. Dave works it out with them, starting from how the business runs today.
 
-Prices are quoted in South African Rand (ZAR). Invoicing in USD/EUR is available for international clients.
+## Pages
 
-## How I work: forward deployed engineering
+- Home: https://www.apploading.co/
+- Services (websites, customer portals, automation, internal tools, community apps, two ready-made products): https://www.apploading.co/services/
+- Selected work and case studies: https://www.apploading.co/work/
+- Guest app for lodges (a working demonstration): https://www.apploading.co/guest-app-for-lodges/
+- About and contact: https://www.apploading.co/about/
 
-Dave Welensky works as a forward deployed engineer: embedded with the client rather than at a distance. That means scoping the real problem with the people doing the work, building production code inside the client's own systems and data, hardening it for daily use (access control, audit logs, alerts), and staying on after go-live. Improvements made for one BuildTrack or LoadKit client ship to every client on the platform.
+## Selected work (client names withheld)
 
-## Proof of work (anonymized case studies, client names withheld)
+- Guest companion app for a bush lodge (working demonstration, not a deployed product): a personal app for each booking with a countdown, checklist, arrival directions, weather, nearby food and care, a wildlife passport and a trip memories card. Opens from a link in the phone's browser, works offline once opened, in English and German. Not connected to a booking system. No time savings have been measured.
+- Order tracking for a Cape Town manufacturer of premium wellness equipment (delivered): customers follow a nine-step timeline of their custom order online, with photos approved before they see them. Orders are R50,000 to R250,000 or more, built over six to fourteen weeks. Support calls during the build phase dropped to zero.
+- Evidence capture for an open-water swimming ratification body (delivered): observers record a swim offline on the boat and the evidence is assembled and sealed the moment the swim ends. It saves the observer six hours of write-up after every swim. Built in eight days.
+- Data checking for a large enterprise moving to a new SAP system (delivered): 55 checks run daily against live data. 171,000 issues were found before go-live.
+- Community app for open-water swimmers (delivered): 780 swimmers in 16 countries and three clubs on one shared platform.
 
-- Data quality engine: 55 rules run daily against live SAP master data for an enterprise S/4HANA migration. 171,000 issues caught before go-live, with GPT-powered root-cause reporting.
-- BuildTrack reference deployment: running for a Cape Town wellness-equipment manufacturer. R50,000-R250,000+ custom orders; support calls during the build phase dropped to zero.
-- LoadKit reference deployment (SwimLoading, swimloading.com): an open-water swimming community platform with 780 swimmers across 16 countries and 3 clubs on one codebase. The club side runs an adult open-water club with league racing and pool squads with coaches, attendance and parents, including a foundation-funded learn-to-swim programme that reports progress to its funder.
-- Ocean-swim operations platform: real-time boat, crew and mission coordination with safety-critical incident tracking, plus live family tracking for long-distance swims (position against planned route, pace, stroke rate, water temperature). Live since July 2026.
-- Consulting operations platform: a 14-module internal operations system (timesheets, projects, leave, expenses, skills, staffing) for a consulting firm. 53 page routes, 44 API endpoints, 51 database tables.
-- Website rebuild: migrated a professional-services firm's public site from WordPress to Next.js with schema.org markup and an llms.txt file, the same approach used on this site.
-- Observer Hub (observerhub.vercel.app): a swim ratification platform. Observers capture evidence offline on the boat (check-ins, feeds, attire, incidents, timestamped and GPS-tagged); the evidence is assembled and SHA-256 sealed the moment capture ends, saving the observer 6 hours of write-up after every swim; the ratifying body reviews, queries, decides and issues certificates on an append-only record. 26 database tables, built in 8 days.
-- Investment intelligence platform (private beta): an equity-market valuation system combining market data, historical PE ranges back to 1960, forward earnings expectations and analyst consensus. 3,200 PE observations across 4 indices.
+## Ready-made products
 
-## Key pages
+- BuildTrack: customer order tracking for made-to-order businesses. Live in four to six weeks. Setup R80,000 to R120,000, then R6,000 to R10,000 a month.
+- LoadKit: a community app for clubs and activity groups. Live in two weeks. Setup R25,000 to R60,000, then R3,000 to R8,000 a month.
 
-- Platforms: https://www.apploading.co/#platforms
-- Proof of work: https://www.apploading.co/#work
-- FAQ: https://www.apploading.co/#faq
+Prices are in South African rand. Invoicing in USD or EUR is available. Custom work is quoted after a first conversation.
 
 ## Contact
 
 Email: dave@apploading.co
-Location: Cape Town, South Africa. Remote-first, works with international clients.
-Response time: same business day.
+Location: Cape Town, South Africa. Works remotely with clients locally and internationally.
+Reply time: the same business day.

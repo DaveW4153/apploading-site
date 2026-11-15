@@ -449,3 +449,7 @@ b,strong{color:var(--text);font-weight:600}
   .js .statement .sw{color:var(--ink)}
   .wm-rings circle.wm-pulse{animation:none;opacity:.5}
 }
+
+/* mouse glow: a small bright dot and a wide soft halo follow the pointer (fine pointers only, never with reduced motion) */
+.glow-on::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;background:radial-gradient(18px circle at var(--mouse-x,-999px) var(--mouse-y,-999px),rgba(77,217,236,.5),transparent 100%),radial-gradient(520px circle at var(--mouse-x,-999px) var(--mouse-y,-999px),rgba(77,217,236,.075),transparent 70%)}
+@media (prefers-reduced-motion:reduce){.glow-on::before{display:none}}

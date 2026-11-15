@@ -168,6 +168,18 @@
     });
   }
 
+  // glow that follows the mouse (like swimloading.com): a small bright dot and a wide soft halo
+  if (fine && !reduce) {
+    doc.body.classList.add('glow-on');
+    const root = doc.body.style;
+    addEventListener('pointermove', (e) => {
+      if (e.pointerType && e.pointerType !== 'mouse') return;
+      root.setProperty('--mouse-x', e.clientX + 'px');
+      root.setProperty('--mouse-y', e.clientY + 'px');
+    }, { passive: true });
+    doc.documentElement.addEventListener('mouseleave', () => { root.setProperty('--mouse-x', '-999px'); root.setProperty('--mouse-y', '-999px'); });
+  }
+
   // one scroll handler: nav progress bar, hero drift, statement highlight
   const navBar = $('#navBar'), load = $('#load');
   let queued = false;
@@ -276,7 +288,7 @@
       btn.disabled = true;
       btn.textContent = 'Sending...';
       try {
-        const r = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
+        const r = await fetch('/api/contact/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
         if (!r.ok) throw new Error(String(r.status));
         f.reset();
         status.classList.add('ok');

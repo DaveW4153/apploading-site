@@ -1,6 +1,6 @@
 # apploading.co
 
-> Dave Welensky is an independent builder in Cape Town who builds websites, apps and practical tools that take repetitive work off a business and make life easier for its team and customers. One person, no agency: you deal directly with the person who works out the problem, builds the solution and supports it after launch.
+> Dave is an independent builder in Cape Town who builds websites, apps and practical tools that take repetitive work off a business and make life easier for its team and customers. One person, no agency: you deal directly with the person who works out the problem, builds the solution and supports it after launch.
 
 ## Who it's for
 

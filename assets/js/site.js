@@ -227,8 +227,14 @@
   const dlg = $('#shots');
   if (dlg && typeof dlg.showModal === 'function') {
     $$('[data-open-shots]').forEach((b) => b.addEventListener('click', () => { dlg.showModal(); track('demo_open', { item: 'guest-app-screens' }); }));
-    $$('[data-close-shots]', dlg).forEach((b) => b.addEventListener('click', () => dlg.close()));
-    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+    // Close button is a <form method="dialog"> and click-outside is closedby="any" in the markup.
+    // Safari has no closedby yet, so there: close only when the press and release both land outside the dialog box.
+    if (!('closedBy' in HTMLDialogElement.prototype)) {
+      const outside = (e) => { const r = dlg.getBoundingClientRect(); return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom; };
+      let down = false;
+      dlg.addEventListener('pointerdown', (e) => { down = outside(e); });
+      dlg.addEventListener('pointerup', (e) => { if (down && outside(e)) dlg.close(); });
+    }
   } else {
     $$('[data-open-shots]').forEach((b) => { b.hidden = true; });
   }

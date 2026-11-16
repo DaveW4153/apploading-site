@@ -7,8 +7,15 @@
 //   CONTACT_FROM    optional. Sender address; must be on a domain verified
 //                   in Resend.
 
-const TO = process.env.CONTACT_TO || 'dave@apploading.co';
-const FROM = process.env.CONTACT_FROM || 'apploading.co enquiries <onboarding@resend.dev>';
+// Settings pasted into a dashboard often gain stray spaces, line breaks or
+// wrapping quote marks; strip them so a sloppy paste cannot break delivery.
+const setting = (name, fallback) => {
+  const v = String(process.env[name] || '').replace(/[\r\n\t]/g, '').trim().replace(/^(["'])(.*)\1$/, '$2').trim();
+  return v || fallback;
+};
+
+const TO = setting('CONTACT_TO', 'dave@apploading.co');
+const FROM = setting('CONTACT_FROM', 'apploading.co enquiries <onboarding@resend.dev>');
 
 const ALLOWED_HOSTS = /^(www\.)?apploading\.co$|\.vercel\.app$|^localhost(:\d+)?$/;
 const EMAIL = /^[^\s@<>"',;]+@[^\s@<>"',;]+\.[^\s@<>"',;]+$/;
@@ -32,7 +39,7 @@ module.exports = async (req, res) => {
     if (!ALLOWED_HOSTS.test(host)) return res.status(403).json({ error: 'Forbidden' });
   }
 
-  const key = process.env.RESEND_API_KEY;
+  const key = setting('RESEND_API_KEY', '');
   if (!key) return res.status(503).json({ error: 'Contact form is not configured' });
 
   // req.body is parsed lazily and throws on malformed JSON

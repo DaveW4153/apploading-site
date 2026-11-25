@@ -887,7 +887,7 @@ document.addEventListener('click', async (e) => {
       <p class="kicker-sm">${t('lang.ready')}</p>
       <div class="chips" role="group" aria-label="${t('lang.ready')}">${enabledLangs.map((k) => html`<button type="button" class="chip${lang === k ? ' on' : ''}" data-act="setlang" data-arg="${k}" data-close>${LANGS[k].label}</button>`)}</div>
       <p class="kicker-sm lang-more">${t('lang.soon')}</p>
-      <div class="chips" role="group" aria-label="${t('lang.soon')}">${Object.entries(PLANNED).map(([k, label]) => html`<button type="button" class="chip chip-soon" data-act="lang-soon" data-arg="${label}" lang="${k}">${label}</button>`)}</div>
+      <div class="chips" role="group" aria-label="${t('lang.soon')}">${Object.entries(PLANNED).map(([k, label]) => html`<button type="button" class="chip chip-soon" aria-disabled="true" data-act="lang-soon" data-arg="${label}" lang="${k}">${label}</button>`)}</div>
       <p class="note" id="lang-note" role="status">${t('lang.soon.note')}</p>`); break;
     case 'lang-soon': { const n = $('#lang-note'); if (n) n.textContent = t('lang.soon.pick', { lang: arg }); break; }
     case 'theme': store.set('theme', arg); applyTheme(); render(); break;

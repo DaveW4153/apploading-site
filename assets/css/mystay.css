@@ -60,3 +60,9 @@
   .ms-show.flip .ms-copy{order:0}
   .ms-duo{max-width:520px;margin:0 auto;width:100%}
 }
+
+/* language picker in the demo panel: two live languages, the rest greyed out until they are translated */
+.ms-langs label{padding:8px 14px}
+.ms-langs label.off{opacity:.4;border-style:dashed;cursor:not-allowed}
+.ms-langs label.off input{cursor:not-allowed}
+.ms-note{margin:12px 0 0;font-size:13.5px;line-height:1.5;color:var(--muted)}

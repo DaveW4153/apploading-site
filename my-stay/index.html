@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site.css">
-<link rel="stylesheet" href="/assets/css/mystay.css">
+<link rel="stylesheet" href="/assets/css/mystay.css?v=2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,6 +130,30 @@
               <label><input type="radio" name="accent" value="clay"><span style="--sw:#c8644c"></span><i>Clay</i></label>
               <label><input type="radio" name="accent" value="dusk"><span style="--sw:#6f95bd"></span><i>Dusk blue</i></label>
             </div>
+          </fieldset>
+          <fieldset class="ms-swatches ms-langs">
+            <legend>Language</legend>
+            <div>
+              <label><input type="radio" name="lang" value="en" checked><i>English</i></label>
+              <label><input type="radio" name="lang" value="de"><i lang="de">Deutsch</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="fr" disabled><i lang="fr">Français</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="nl" disabled><i lang="nl">Nederlands</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="es" disabled><i lang="es">Español</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="it" disabled><i lang="it">Italiano</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="pt" disabled><i lang="pt">Português</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="sv" disabled><i lang="sv">Svenska</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="da" disabled><i lang="da">Dansk</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="no" disabled><i lang="no">Norsk</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="pl" disabled><i lang="pl">Polski</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="ru" disabled><i lang="ru">Русский</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="zh" disabled><i lang="zh">中文</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="ja" disabled><i lang="ja">日本語</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="ko" disabled><i lang="ko">한국어</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="hi" disabled><i lang="hi">हिन्दी</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="ar" disabled><i lang="ar">العربية</i></label>
+              <label class="off" title="Not translated yet"><input type="radio" name="lang" value="af" disabled><i lang="af">Afrikaans</i></label>
+            </div>
+            <p class="ms-note">English and German are live. The greyed-out languages are not translated yet, and are added for a lodge on request.</p>
           </fieldset>
           <div class="cta-row">
             <a class="btn btn-sm arrow" id="ms-open" href="/stay/?demo=1" target="_blank" rel="noopener" data-track="mystay-open">Open it full screen</a>
@@ -304,6 +328,6 @@
   </div>
 </footer>
 <script src="/assets/js/site.js" defer></script>
-<script src="/assets/js/mystay.js" defer></script>
+<script src="/assets/js/mystay.js?v=2" defer></script>
 </body>
 </html>

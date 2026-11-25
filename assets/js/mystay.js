@@ -17,10 +17,10 @@
   function url(moment, embed) {
     const q = new URLSearchParams({ demo: '1' });
     if (embed) { q.set('embed', '1'); q.set('theme', 'dark'); }
-    q.set('lang', 'en');
+    const d = new FormData(form);
+    q.set('lang', d.get('lang') === 'de' ? 'de' : 'en');
     q.set('stage', moment.dataset.stage);
     if (moment.dataset.seed) q.set('seed', '1');
-    const d = new FormData(form);
     const brand = clean(d.get('brand'), 40);
     const host = clean(d.get('host'), 20);
     const accent = d.get('accent');

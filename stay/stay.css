@@ -573,8 +573,8 @@ textarea[data-msg] { min-height: 150px; }
 /* Language menu: working languages, then the ones a lodge can ask for. */
 .pill-lang .caret { font-size: .8em; opacity: .7; }
 .lang-more { margin-top: 20px; }
-.chip-soon { box-shadow: inset 0 0 0 1.5px var(--line); color: var(--muted); border-style: dashed; font-weight: 500; }
-.chip-soon:hover { color: var(--text); }
+.chip-soon { box-shadow: inset 0 0 0 1.5px var(--line); color: var(--muted); font-weight: 500; opacity: .45; cursor: not-allowed; }
+.chip-soon:hover { background: none; }
 #lang-note { margin-top: 16px; }
 
 /* Wildlife guide as photo cards, and a full-width photo at the top of each animal's sheet. */

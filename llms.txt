@@ -9,7 +9,7 @@ Business owners who spend their evenings on admin, answer the same customer ques
 ## Pages
 
 - Home: https://www.apploading.co/
-- Services (websites, customer portals, automation, internal tools, community apps, two ready-made products): https://www.apploading.co/services/
+- Services (websites, customer portals, automation, internal tools, community apps, three ready-made products): https://www.apploading.co/services/
 - Selected work and case studies: https://www.apploading.co/work/
 - My stay, the guest app for safari lodges, bush camps, boutique hotels and guesthouses anywhere in the world, with a live demo: https://www.apploading.co/my-stay/
 - About and contact: https://www.apploading.co/about/

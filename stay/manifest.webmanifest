@@ -1,0 +1,16 @@
+{
+  "name": "My stay sample",
+  "short_name": "My stay",
+  "description": "A working sample of the My stay guest app for lodges, set up for an invented lodge.",
+  "id": "/stay/",
+  "start_url": "/stay/?demo=1",
+  "scope": "/stay/",
+  "display": "standalone",
+  "background_color": "#0e120e",
+  "theme_color": "#0e120e",
+  "icons": [
+    { "src": "/stay/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/stay/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/stay/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

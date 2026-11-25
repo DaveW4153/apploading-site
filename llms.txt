@@ -12,6 +12,7 @@ Business owners who spend their evenings on admin, answer the same customer ques
 - Services (websites, customer portals, automation, internal tools, community apps, two ready-made products): https://www.apploading.co/services/
 - Selected work and case studies: https://www.apploading.co/work/
 - Guest app for lodges (a working demonstration): https://www.apploading.co/guest-app-for-lodges/
+- My stay, the guest app for boutique and luxury lodges, with a live demo set up for an invented lodge: https://www.apploading.co/my-stay/
 - About and contact: https://www.apploading.co/about/
 
 ## Selected work (client names withheld)

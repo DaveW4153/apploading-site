@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Owner studio | My stay</title>
+  <meta name="description" content="See how the My stay guest app would work for your lodge: a guided demo, simple branding, guest links, and an honest list of what works today.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e120e">
+  <link rel="icon" href="/stay/icon-192.png">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="/stay/stay.css">
+  <script>
+    try { var d = JSON.parse(localStorage.getItem('lw-stay-v1')) || {}; if (d.theme === 'light' || d.theme === 'dark') document.documentElement.dataset.theme = d.theme; } catch (e) {}
+  </script>
+  <script type="module" src="/stay/host/host.js"></script>
+</head>
+<body class="host-body studio-body">
+  <header class="studio-top">
+    <a class="back link" href="/stay/?demo=1"><i class="ph ph-arrow-left" aria-hidden="true"></i> Guest app</a>
+    <nav class="studio-nav" aria-label="Sections">
+      <a href="#demo">Demo</a><a href="#brand">Your lodge</a><a href="#links">Guest links</a><a href="#work">Your part</a><a href="#status">What works</a><a href="#lang">Languages</a>
+    </nav>
+  </header>
+
+  <main class="studio">
+    <section class="studio-hero">
+      <p class="kicker-sm">Owner studio</p>
+      <h1>See My stay as your guests would.</h1>
+      <p class="lead">A personal guest app for each booking: countdown and weather, directions, a wildlife passport, trip memories and easy requests for extras. Everything below is for you. Guests never see this page.</p>
+    </section>
+
+    <div class="studio-grid">
+      <div class="studio-main">
+        <section class="studio-sec" id="demo" style="--o:1">
+          <header><p class="kicker-sm">Owner demo, about 4 minutes</p><h2>Walk through a stay</h2></header>
+          <p class="note">Six moments from one sample booking. It uses sample data only, and real guests' data is stored separately and never touched. Messages are previewed, not sent.</p>
+          <ol class="demo-steps" id="steps"></ol>
+          <div class="row">
+            <button type="button" class="btn btn-ghost btn-sm" id="prev"><i class="ph ph-arrow-left" aria-hidden="true"></i> Back</button>
+            <button type="button" class="btn btn-accent btn-sm" id="next">Next moment <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-ghost btn-sm" id="reset"><i class="ph ph-eraser" aria-hidden="true"></i> Reset the demo</button>
+          </div>
+          <p class="note" id="reset-msg" role="status"></p>
+        </section>
+
+
+        <section class="studio-sec" id="brand" style="--o:3">
+          <header><p class="kicker-sm">Make it yours</p><h2>Your name, colour and host</h2></header>
+          <p class="note">A quick way to see your lodge's name and colour in the app. This is a preview only. Photos, places, wildlife, prices and contact details come from your property pack, which we set up together.</p>
+          <form class="brand-form" id="brandform" novalidate>
+            <label>Lodge name<input type="text" name="brand" maxlength="40" placeholder="Your lodge name" autocomplete="off"></label>
+            <label>Host first name<input type="text" name="host" maxlength="20" placeholder="Host first name" autocomplete="off"></label>
+            <fieldset class="swatches"><legend>Accent colour</legend><div id="swatches" role="radiogroup" aria-label="Accent colour"></div></fieldset>
+          </form>
+          <h3 class="sub">What goes into a property pack</h3>
+          <ul class="pack" id="pack"></ul>
+          <p class="note">One shared app, one content file per lodge. A new lodge copies the file and changes its content. No app code changes.</p>
+        </section>
+
+        <section class="studio-sec" id="links" style="--o:4">
+          <header><p class="kicker-sm">Guest links</p><h2>Create a personal link</h2></header>
+          <p class="note">Enter a booking and send the guest their own link. They open it and see their lodge, dates and countdown, in English or German.</p>
+          <form id="f" class="host-form" novalidate>
+            <label>Guest name or names<input type="text" name="n" maxlength="60" placeholder="Anika and Jonas" autocomplete="off"></label>
+            <div class="grid2">
+              <label>Lodge<select name="l"></select></label>
+              <label>Language<select name="lang"><option value="en">English</option><option value="de">Deutsch</option></select></label>
+              <label>Arrival<input type="date" name="in" required></label>
+              <label>Departure<input type="date" name="out" required></label>
+              <label>Adults<input type="number" name="a" min="1" max="8" value="2" inputmode="numeric"></label>
+              <label>Children<input type="number" name="k" min="0" max="8" value="0" inputmode="numeric"></label>
+            </div>
+            <label>How are they arriving?
+              <select name="via">
+                <option value="hds">Fly to Hoedspruit (HDS)</option>
+                <option value="mqp">Fly to Nelspruit (MQP) and drive</option>
+                <option value="jnb">Drive from Johannesburg</option>
+              </select>
+            </label>
+            <p class="note" id="err" role="alert"></p>
+          </form>
+          <div class="card" id="result" hidden>
+            <label>Personal link<input type="text" id="link" readonly></label>
+            <div class="row">
+              <button type="button" class="btn btn-accent btn-sm" id="copy"><i class="ph ph-copy" aria-hidden="true"></i> Copy link</button>
+              <button type="button" class="btn btn-ghost btn-sm" id="preview">Preview in the phone <i class="ph ph-device-mobile" aria-hidden="true"></i></button>
+            </div>
+            <h3 class="sub">Message to send</h3>
+            <label class="sr-only" for="msg">Message</label>
+            <textarea id="msg" rows="6"></textarea>
+            <div class="row">
+              <a class="btn btn-accent btn-sm" id="wa" target="_blank" rel="noopener">Send on WhatsApp <i class="ph ph-whatsapp-logo" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost btn-sm" id="mail">Email it <i class="ph ph-envelope-simple" aria-hidden="true"></i></a>
+            </div>
+            <div id="qr" class="qr" aria-label="QR code for the link"></div>
+            <p class="note">The QR code suits check-in or a printed welcome card. The link carries the booking details, which is fine for a demo. A live version would use a signed token instead.</p>
+          </div>
+        </section>
+
+        <section class="studio-sec" id="work" style="--o:5">
+          <header><p class="kicker-sm">Your part</p><h2>What it takes from you</h2></header>
+          <ul class="work">
+            <li><span class="work-ic"><i class="ph ph-clipboard-text" aria-hidden="true"></i></span><div><b>Once, at the start</b><p>Confirm the lodge details guests ask about: check-in and check-out, Wi-Fi, gate access, house rules. Choose your favourite places, set up the extras you offer and their prices, and approve the photos and wording.</p></div></li>
+            <li><span class="work-ic"><i class="ph ph-link-simple" aria-hidden="true"></i></span><div><b>For each booking</b><p>Create the guest's link with their name and dates, and send it. Today you do this in this studio. Later it could happen automatically from your booking system.</p></div></li>
+            <li><span class="work-ic"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i></span><div><b>During stays</b><p>Reply to guests on WhatsApp, as you do now. Requests for extras and questions arrive there, already written out with the guest's name and dates.</p></div></li>
+          </ul>
+        </section>
+
+        <section class="studio-sec" id="status" style="--o:6">
+          <header><p class="kicker-sm">Honest status</p><h2>What works today, and what needs more</h2></header>
+          <div class="status-group">
+            <h3><span class="pill-s ok">Working now</span></h3>
+            <ul class="check-list" id="s-ok"></ul>
+          </div>
+          <div class="status-group">
+            <h3><span class="pill-s demo">Demo only</span></h3>
+            <ul class="check-list" id="s-demo"></ul>
+          </div>
+          <div class="status-group">
+            <h3><span class="pill-s need">Needs an integration or backend</span></h3>
+            <ul class="check-list" id="s-need"></ul>
+          </div>
+        </section>
+
+        <section class="studio-sec" id="lang" style="--o:7">
+          <header><p class="kicker-sm">Languages</p><h2>English and German</h2></header>
+          <table class="lang-table" id="langs"></table>
+          <p class="note">A language is only listed as supported when every screen is translated. Safety and arrival wording should be checked by a native speaker before launch. The wording to check is below. Messages to the host are always written in English.</p>
+          <div id="review"></div>
+        </section>
+      </div>
+      <aside class="phone-col" style="--o:2" aria-label="Guest app preview">
+          <div class="phone">
+            <p class="phone-loading" aria-hidden="true">Loading the guest app...</p>
+            <iframe id="frame" title="My stay guest app preview" allow="clipboard-write"></iframe>
+          </div>
+          <div class="phone-tools">
+            <div class="seg small" role="group" aria-label="Preview language"><button type="button" data-lang="en" aria-pressed="true">English</button><button type="button" data-lang="de" aria-pressed="false">Deutsch</button></div>
+            <a class="link" id="frame-open" href="/stay/?demo=1" target="_blank" rel="noopener">Open full size <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </aside>
+    </div>
+  </main>
+</body>
+</html>

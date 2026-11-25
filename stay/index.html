@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My stay: sample guest app | apploading.co</title>
+  <meta name="description" content="A working sample of the My stay guest app for lodges, set up for an invented lodge: countdown, weather, travel plan, map, wildlife passport and memories, in English and German. Works offline.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e120e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="My stay">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="/stay/manifest.webmanifest">
+  <link rel="icon" href="/stay/icon-192.png">
+  <link rel="apple-touch-icon" href="/stay/apple-touch-icon.png">
+
+  <!-- Fonts and icons load from external hosts. -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="/stay/stay.css">
+  <script>
+    /* Apply the saved theme before first paint. A sample stay keeps its own settings, separate from a real guest's. */
+    try {
+      var q = new URLSearchParams(location.search);
+      var sample = q.get('demo') === '1' || !(q.get('in') && q.get('out'));
+      var d = JSON.parse(localStorage.getItem(sample ? 'lw-stay-demo-v1' : 'lw-stay-v1')) || {};
+      if (d.theme === 'light' || d.theme === 'dark') document.documentElement.dataset.theme = d.theme;
+      if (q.get('embed') === '1') { document.documentElement.classList.add('embed'); if (q.get('theme') === 'light' || q.get('theme') === 'dark') document.documentElement.dataset.theme = q.get('theme'); }
+    } catch (e) {}
+  </script>
+  <script type="module" src="/stay/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <div class="layout">
+    <aside class="side" id="side" aria-label="About this demo"></aside>
+    <div class="app">
+      <header class="top" id="top"></header>
+      <div id="net" class="net" role="status" hidden></div>
+      <main id="view" tabindex="-1"></main>
+      <nav class="tabs" id="tabs"></nav>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="sos" class="sheet" aria-labelledby="sos-title">
+    <button type="button" class="close" data-close aria-label="Close"><i class="ph ph-x" aria-hidden="true"></i></button>
+    <div id="sos-body"></div>
+  </dialog>
+
+  <dialog id="sheet" class="sheet" aria-labelledby="sheet-title">
+    <button type="button" class="close" data-close aria-label="Close"><i class="ph ph-x" aria-hidden="true"></i></button>
+    <div id="sheet-body"></div>
+  </dialog>
+
+  <dialog id="guard" class="sheet" aria-labelledby="guard-title">
+    <button type="button" class="close" data-close aria-label="Close"><i class="ph ph-x" aria-hidden="true"></i></button>
+    <div id="guard-body"></div>
+  </dialog>
+</body>
+</html>

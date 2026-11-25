@@ -11,6 +11,7 @@ import { PLANNED } from './i18n.js';
 import { clearPhotos, storageInfo } from './photos.js';
 import { viewWild, wildAct, wildAfterRender, initWild, seedDemo, passportStats, todaysChallenge, localSummary, wipeWild } from './wild.js';
 import { extrasView, extrasTeaser, extrasAct, initExtras } from './extras.js';
+import { initAsk, askTeaser, askAct } from './ask.js';
 
 const root = document.documentElement;
 
@@ -341,11 +342,11 @@ function viewHome() {
   const s = stage();
   const date = focusDate();
   const plan = {
-    pre: [prepSec, weatherCard, extrasTeaser, neighboursSec, hostSec, installCard],
-    eve: [etaSec, weatherCard, prepSec, hostSec],
-    arrival: [arrivalSec, () => skySec(date), extrasTeaser, hostSec],
-    staying: [todaySec, wildTodaySec, () => skySec(date), extrasTeaser, essentialsSec, hostSec],
-    departure: [() => checklistSec('dep'), onwardSec, extrasTeaser, hostSec],
+    pre: [prepSec, askTeaser, weatherCard, extrasTeaser, neighboursSec, hostSec, installCard],
+    eve: [etaSec, askTeaser, weatherCard, prepSec, hostSec],
+    arrival: [arrivalSec, askTeaser, () => skySec(date), extrasTeaser, hostSec],
+    staying: [todaySec, askTeaser, wildTodaySec, () => skySec(date), extrasTeaser, essentialsSec, hostSec],
+    departure: [() => checklistSec('dep'), askTeaser, onwardSec, extrasTeaser, hostSec],
     after: [memoriesSec, feedbackSec, returnSec],
   }[s];
   return html`${heroCard()}${plan.map((f) => f())}`;
@@ -875,6 +876,7 @@ document.addEventListener('click', async (e) => {
   const act = el.dataset.act, arg = el.dataset.arg, id = el.dataset.id;
   if (await wildAct(act, arg, id, el)) return;
   if (await extrasAct(act, arg, id, el)) return;
+  if (await askAct(act, arg)) return;
   const flip = (key) => { const o = store.get(key, {}); o[id] = !o[id]; store.set(key, o); };
   switch (act) {
     case 'tab': goto(arg); break;
@@ -995,6 +997,7 @@ applyTheme();
 applyBrand();
 initWild();
 initExtras();
+initAsk();
 window.addEventListener('hashchange', route);
 (async () => {
   if (MODE.demo) {

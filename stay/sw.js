@@ -1,9 +1,9 @@
 /* My stay sample: offline support.
    The app shell is cached on first visit so it opens with no signal, and refreshed whenever there is signal. Photos, fonts, icons and map tiles are cached as they are used.
    Weather is not cached here: the app keeps its own copy of the last forecast. */
-const VERSION = 'mystay-sample-v2';
+const VERSION = 'mystay-sample-v3';
 const SHELL = [
-  '/stay/', '/stay/index.html', '/stay/app.js', '/stay/core.js', '/stay/ui.js', '/stay/sheet.js', '/stay/photos.js', '/stay/wild.js', '/stay/extras.js',
+  '/stay/', '/stay/index.html', '/stay/app.js', '/stay/core.js', '/stay/ui.js', '/stay/sheet.js', '/stay/photos.js', '/stay/wild.js', '/stay/extras.js', '/stay/ask.js',
   '/stay/data.js', '/stay/i18n.js', '/stay/lang/en.js', '/stay/lang/de.js', '/stay/property/index.js', '/stay/property/sample.js',
   '/stay/sun.js', '/stay/stay.css', '/stay/manifest.webmanifest', '/stay/icon-192.png', '/stay/apple-touch-icon.png',
   '/stay/img/welcome.jpg', '/stay/img/suite-1.jpg', '/stay/img/sp-giraffe.jpg', '/stay/img/sp-zebra.jpg',

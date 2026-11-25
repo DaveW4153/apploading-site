@@ -3,3 +3,7 @@
 /whatsapp.jpg
 /swim-*.jpg
 /images/
+
+# Dependencies for the server functions in /api
+node_modules/
+.vercel/

@@ -1,0 +1,14 @@
+{
+  "name": "apploading-site",
+  "private": true,
+  "description": "apploading.co: a static site, with a few server functions in /api.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node tools/dev-server.mjs",
+    "knowledge": "node tools/build-stay-knowledge.mjs",
+    "test": "node --test tools/test/*.test.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.14.0"
+  }
+}

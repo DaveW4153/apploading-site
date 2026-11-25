@@ -7,7 +7,12 @@
       "permanent": true
     },
     {
-      "source": "/guest-app-for-lodges/:path*",
+      "source": "/guest-app-for-lodges/",
+      "destination": "/my-stay/",
+      "permanent": true
+    },
+    {
+      "source": "/guest-app-for-lodges",
       "destination": "/my-stay/",
       "permanent": true
     }

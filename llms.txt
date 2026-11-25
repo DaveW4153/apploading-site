@@ -11,13 +11,12 @@ Business owners who spend their evenings on admin, answer the same customer ques
 - Home: https://www.apploading.co/
 - Services (websites, customer portals, automation, internal tools, community apps, two ready-made products): https://www.apploading.co/services/
 - Selected work and case studies: https://www.apploading.co/work/
-- Guest app for lodges (a working demonstration): https://www.apploading.co/guest-app-for-lodges/
-- My stay, the guest app for boutique and luxury lodges, with a live demo set up for an invented lodge: https://www.apploading.co/my-stay/
+- My stay, the guest app for safari lodges, bush camps, boutique hotels and guesthouses anywhere in the world, with a live demo: https://www.apploading.co/my-stay/
 - About and contact: https://www.apploading.co/about/
 
 ## Selected work (client names withheld)
 
-- Guest companion app for a bush lodge (working demonstration, not a deployed product): a personal app for each booking with a countdown, checklist, arrival directions, weather, nearby food and care, a wildlife passport and a trip memories card. Opens from a link in the phone's browser, works offline once opened, in English and German. Not connected to a booking system. No time savings have been measured.
+- My stay, a guest app for lodges: a personal app for each booking with a countdown, checklists and packing list, arrival planning, weather, a plan for each day, places nearby, a wildlife guide and passport with the guest's own photos, extras requested from the host, an SOS screen and a trip memories card. Opens from a link in the phone's browser, works offline once opened, in English and German. Set up per lodge under the lodge's own name. It does not connect to a booking system or take payments.
 - Order tracking for a Cape Town manufacturer of premium wellness equipment (delivered): customers follow a nine-step timeline of their custom order online, with photos approved before they see them. Orders are R50,000 to R250,000 or more, built over six to fourteen weeks. Support calls during the build phase dropped to zero.
 - Evidence capture for an open-water swimming ratification body (delivered): observers record a swim offline on the boat and the evidence is assembled and sealed the moment the swim ends. It saves the observer six hours of write-up after every swim. Built in eight days.
 - Data checking for a large enterprise moving to a new SAP system (delivered): 55 checks run daily against live data. 171,000 issues were found before go-live.
@@ -26,6 +25,7 @@ Business owners who spend their evenings on admin, answer the same customer ques
 ## Ready-made products
 
 - BuildTrack: customer order tracking for made-to-order businesses. Live in four to six weeks. Setup R80,000 to R120,000, then R6,000 to R10,000 a month.
+- My stay: a guest app for safari lodges, bush camps, boutique hotels and guesthouses, set up per lodge anywhere in the world. A lodge sends its details, it is set up, the owner checks it as a guest would, and it is live. Quoted per lodge after a first conversation. Live demo: https://www.apploading.co/stay/?demo=1
 - LoadKit: a community app for clubs and activity groups. Live in two weeks. Setup R25,000 to R60,000, then R3,000 to R8,000 a month.
 
 Prices are in South African rand. Invoicing in USD or EUR is available. Custom work is quoted after a first conversation.

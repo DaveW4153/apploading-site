@@ -5,6 +5,11 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/guest-app-for-lodges/:path*",
+      "destination": "/my-stay/",
+      "permanent": true
     }
   ],
   "headers": [

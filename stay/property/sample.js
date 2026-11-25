@@ -12,8 +12,8 @@ export const LODGE = {
   host: 'Naledi',
   whatsapp: '27000000000', phone: '+27 00 000 0000', phoneAlt: '+27 00 000 0001', email: 'host@sample-lodge.example',
   address: 'Sample Bush Lodge, 1 Sample Road, Sampletown, Limpopo',
-  book: 'https://www.apploading.co/guest-app-for-lodges/',
-  site: 'https://www.apploading.co/guest-app-for-lodges/',
+  book: 'https://www.apploading.co/my-stay/',
+  site: 'https://www.apploading.co/my-stay/',
   cdn: '/stay/img/',
 };
 
@@ -494,7 +494,7 @@ export const BRAND = {
   welcomePhoto: 'welcome.jpg',
   memoryPhoto: '/stay/img/welcome.jpg',
   langs: ['en', 'de'], defaultLang: 'en',
-  reviewUrl: 'https://www.apploading.co/guest-app-for-lodges/',
+  reviewUrl: 'https://www.apploading.co/my-stay/',
   hashtag: '#MyStay',
 };
 

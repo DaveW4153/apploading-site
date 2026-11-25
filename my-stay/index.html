@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My stay: a guest app for boutique and luxury lodges | apploading.co</title>
-<meta name="description" content="A personal guest app for every booking, under your lodge's name: countdown, arrival planning, a plan for each day, a wildlife passport, extras and a memories card. Try the live demo.">
+<title>Guest app for safari lodges and boutique stays | My stay</title>
+<meta name="description" content="My stay is a guest app for safari lodges, boutique lodges and guesthouses, under your own name. One link per booking, nothing to download. Try the live demo.">
 <link rel="canonical" href="https://www.apploading.co/my-stay/">
 <meta property="og:site_name" content="apploading.co">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_ZA">
-<meta property="og:title" content="My stay: a guest app for boutique and luxury lodges">
-<meta property="og:description" content="A personal guest app for every booking, under your lodge's name. Walk through a stay in the live demo, with your own lodge's name on it.">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Guest app for safari lodges and boutique stays | My stay">
+<meta property="og:description" content="My stay is a guest app for safari lodges, boutique lodges and guesthouses, under your own name. One link per booking, nothing to download. Try the live demo.">
 <meta property="og:url" content="https://www.apploading.co/my-stay/">
-<meta property="og:image" content="https://www.apploading.co/assets/img/og-guest.jpg">
+<meta property="og:image" content="https://www.apploading.co/assets/img/og-mystay.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="A guest app for lodges: four phone screens showing a countdown, arrival day, a wildlife passport and trip memories.">
+<meta property="og:image:alt" content="My stay, the guest app for lodges: three phone screens showing a countdown to the stay, a wildlife guide with photos and a trip memories card.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="My stay: a guest app for boutique and luxury lodges">
-<meta name="twitter:description" content="A personal guest app for every booking, under your lodge's name. Walk through a stay in the live demo.">
-<meta name="twitter:image" content="https://www.apploading.co/assets/img/og-guest.jpg">
+<meta name="twitter:title" content="Guest app for safari lodges and boutique stays | My stay">
+<meta name="twitter:description" content="My stay is a guest app for safari lodges, boutique lodges and guesthouses, under your own name. One link per booking, nothing to download. Try the live demo.">
+<meta name="twitter:image" content="https://www.apploading.co/assets/img/og-mystay.jpg">
 <meta name="theme-color" content="#06090F">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -41,21 +41,169 @@
       "url": "https://www.apploading.co/",
       "logo": "https://www.apploading.co/icon-192.png",
       "email": "dave@apploading.co",
-      "address": { "@type": "PostalAddress", "addressLocality": "Cape Town", "addressCountry": "ZA" }
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cape Town",
+        "addressCountry": "ZA"
+      },
+      "areaServed": "Worldwide"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.apploading.co/my-stay/#page",
+      "url": "https://www.apploading.co/my-stay/",
+      "name": "Guest app for safari lodges and boutique stays | My stay",
+      "description": "My stay is a guest app for safari lodges, boutique lodges and guesthouses, under your own name. One link per booking, nothing to download. Try the live demo.",
+      "isPartOf": {
+        "@id": "https://www.apploading.co/#site"
+      },
+      "about": {
+        "@id": "https://www.apploading.co/my-stay/#app"
+      },
+      "primaryImageOfPage": "https://www.apploading.co/assets/img/og-mystay.jpg"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.apploading.co/#site",
+      "url": "https://www.apploading.co/",
+      "name": "apploading.co",
+      "publisher": {
+        "@id": "https://www.apploading.co/#org"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.apploading.co/" },
-        { "@type": "ListItem", "position": 2, "name": "My stay: guest app for lodges", "item": "https://www.apploading.co/my-stay/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.apploading.co/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "My stay: the guest app for lodges",
+          "item": "https://www.apploading.co/my-stay/"
+        }
       ]
     },
     {
-      "@type": "Service",
-      "name": "My stay: a guest app for boutique and luxury lodges",
-      "provider": { "@id": "https://www.apploading.co/#org" },
-      "serviceType": "Guest app for lodges",
-      "description": "A personal guest app for every booking, under the lodge's own name: countdown, arrival planning, a plan for each day, a wildlife passport, extras and a memories card. A working demonstration, set up per lodge."
+      "@type": "SoftwareApplication",
+      "@id": "https://www.apploading.co/my-stay/#app",
+      "name": "My stay",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Any, in a web browser",
+      "url": "https://www.apploading.co/my-stay/",
+      "image": "https://www.apploading.co/assets/img/og-mystay.jpg",
+      "description": "A guest app for safari lodges, bush camps, boutique hotels and guesthouses anywhere in the world, set up per lodge under the lodge's own name. Each guest opens one link, with nothing to download: a countdown, arrival planning, a plan for each day, a wildlife guide and passport, extras requested from the host, an SOS screen and a trip memories card. English and German, and it works without signal once opened.",
+      "inLanguage": [
+        "en",
+        "de"
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Lodge, boutique hotel and guesthouse owners and managers"
+      },
+      "provider": {
+        "@id": "https://www.apploading.co/#org"
+      },
+      "sameAs": "https://www.apploading.co/stay/?demo=1",
+      "areaServed": "Worldwide"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.apploading.co/my-stay/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a guest app for a lodge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a personal guide to the stay that each guest opens from a link you send after they book. It replaces the PDF, the welcome email and most of the WhatsApp questions with one place that covers getting to you, the stay itself and the trip home, under your lodge's own name."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get My stay for my lodge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send me your lodge's name and website and I'll set up a sample you can open on your phone. When you want it for real guests, you send the details listed above, I set up your lodge, you check it as a guest would, and it is live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do guests have to download anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You send the guest a personal link. It opens in the phone's browser, and they can add it to their home screen if they like."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work without signal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once it has been opened, yes. The guides, checklists, lodge details, emergency numbers, passport and photos all keep working. The weather shows the last saved forecast and says so. The map and sending messages need signal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages does it support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "English and German today, switched in one tap. Other languages, such as French, Dutch, Spanish, Italian and Chinese, are added for a lodge on request. Messages to you are always written in English."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it connect to my booking system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet. Today you create each guest's link in an owner screen, with their name and dates. Importing bookings automatically needs an integration with your booking system, which I would scope with you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it take payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Extras are requests. They open in the guest's WhatsApp or email, and you confirm the price and availability there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to guests' photos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They stay on the guest's own phone and are private by default. A guest can choose to send you a photo from their phone, and separately say whether you may use it in marketing. Photos of sensitive species are never offered for marketing, and the app never records where one was seen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is quoted per lodge. After a first conversation you get a defined scope, price and timeline in writing, with optional monthly support after launch. The sample for your lodge costs nothing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "We are not in South Africa. Can you set it up for us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. My stay is set up remotely for lodges, camps and boutique stays anywhere. The demo shows a lodge in South Africa, but your version carries your own area: your airports and routes, your places, your wildlife and your emergency numbers. Invoicing is available in USD, EUR or ZAR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "We are not a safari lodge. Does it still fit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It suits guesthouses, boutique hotels, tented camps and villas too. The wildlife passport becomes a guide to whatever is around you: walks, wine farms, beaches, birds. The rest of the stay works the same way."
+          }
+        }
+      ]
     }
   ]
 }
@@ -66,7 +214,7 @@
 <header class="nav">
   <div class="nav-in">
     <a class="brand" href="/" aria-label="apploading.co, home">apploading<b>.co</b></a>
-    <nav aria-label="Main"><ul class="nav-links"><li><a href="/services/">Services</a></li><li><a href="/work/">Work</a></li><li><a href="/guest-app-for-lodges/">Customer apps</a></li><li><a href="/about/">About</a></li></ul></nav>
+    <nav aria-label="Main"><ul class="nav-links"><li><a href="/services/">Services</a></li><li><a href="/work/">Work</a></li><li><a href="/my-stay/" aria-current="page">Customer apps</a></li><li><a href="/about/">About</a></li></ul></nav>
     <span class="load" id="load" aria-hidden="true">0%</span>
     <a class="btn btn-sm" href="#enquire" data-track="nav">Get a sample</a>
     <span class="nav-bar" id="navBar" aria-hidden="true"></span>
@@ -77,14 +225,14 @@
 <section class="hero" aria-labelledby="h1">
   <div class="wrap hero-grid">
     <div>
-      <p class="crumbs"><a href="/">Home</a> / My stay: guest app for lodges</p>
-      <h1 id="h1" style="font-size:clamp(38px,5vw,66px)">Look after every guest, from booking to goodbye. <em>In an app with your lodge's name on it.</em></h1>
-      <p class="lede">My stay is a personal guest app for each booking. Your guest opens one link on their phone, with nothing to download, and it guides them through the whole trip: getting ready, getting to you, each day of the stay, and the memories they take home.</p>
+      <p class="crumbs"><a href="/">Home</a> / My stay: the guest app for lodges</p>
+      <h1 id="h1" style="font-size:clamp(38px,5vw,66px)">The guest app for your lodge. <em>Every guest looked after, from booking to goodbye.</em></h1>
+      <p class="lede">My stay is a guest app for safari lodges, bush camps, boutique hotels and guesthouses anywhere in the world, under your own name. Each guest opens one link on their phone, with nothing to download, and it guides them through the whole trip: getting ready, getting to you, each day of the stay, and the memories they take home.</p>
       <div class="cta-row">
         <a class="btn arrow" href="/stay/?demo=1" target="_blank" rel="noopener" data-track="mystay-hero-demo">Try the live demo</a>
         <a class="btn btn-line" href="#enquire" data-track="mystay-hero-sample">Get a sample for your lodge</a>
       </div>
-      <p class="reassure"><span class="tag demo" style="margin-right:8px">Working demonstration</span>Built with a bush lodge. Shown here with an invented lodge and sample guests.</p>
+      <p class="reassure"><span class="tag" style="margin-right:8px">Live demo</span>Try it now with a sample lodge, or put your own lodge's name on it.</p>
     </div>
     <div class="hero-visual">
       <div class="trio">
@@ -230,8 +378,7 @@
       <p class="kicker">What it does for your lodge</p>
       <h2 class="h2" id="o1">Fewer of the same questions, one WhatsApp at a time.</h2>
       <p class="lede">Your guests are often first-time visitors, flying a long way, with a lot to ask. Most of the answers are the same for every booking. My stay puts them in the guest's pocket, and leaves your team the conversations that need a person.</p>
-      <p class="small muted">I haven't measured time saved or extra revenue, so I won't put a number on either.</p>
-    </div>
+          </div>
     <div class="rv">
       <dl class="beats">
         <div><dt>Before they arrive</dt><dd>Guests turn up in daylight, packed for the season, with the gate and the check-in sorted, and they already know the rules of the bush.</dd></div>
@@ -243,49 +390,62 @@
   </div>
 </section>
 
-<section class="sec" aria-labelledby="w1">
-  <div class="wrap cols-2">
-    <div class="rv">
-      <p class="kicker">What it asks of you</p>
-      <h2 class="h2" id="w1">A little effort at the start, then a link per booking.</h2>
-      <p class="lede">The app runs on one shared engine, with one content file per lodge. Setting up your lodge means changing the content, not rebuilding the app.</p>
-    </div>
-    <div class="rv">
-      <dl class="beats">
-        <div><dt>Once, at the start</dt><dd>You confirm the details guests ask about: check-in and check-out, Wi-Fi, gate access and house rules. You choose your favourite places, set the extras you offer, and approve the photos and wording.</dd></div>
-        <div><dt>For each booking</dt><dd>You create the guest's link with their name and dates, and send it. Today that is done in an owner screen.</dd></div>
-        <div><dt>During stays</dt><dd>You reply to guests on WhatsApp, as you do now. Questions and requests arrive there, already written out.</dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<section class="sec alt" id="status" aria-labelledby="s1">
+<section class="sec" id="go-live" aria-labelledby="w1">
   <div class="wrap">
-    <p class="kicker">Where it stands</p>
-    <h2 class="h2" id="s1">What works today, and what does not yet.</h2>
-    <p class="lede">My stay is a working demonstration. It is not yet running with paying guests, so here is exactly what you would be getting.</p>
-    <div class="status3">
-      <div class="rv"><span class="tag">Working now</span><h3>Built and working</h3><ul class="ticks"><li>Every guest feature on this page</li><li>A personal link for each guest, created by the host</li><li>Extra requests by WhatsApp or email</li><li>English and German, and offline use once opened</li><li>Your name, colour and host</li></ul></div>
-      <div class="rv"><span class="tag demo">Set up per lodge</span><h3>Yours to provide</h3><ul class="ticks"><li>Your photos, logo and contact details</li><li>Your places, wildlife and house rules</li><li>Your extras, with prices and availability</li><li>A native-speaker check of the German safety wording</li></ul></div>
-      <div class="rv"><span class="tag beta">Not built yet</span><h3>Would need more work</h3><ul class="ticks"><li>Importing bookings from your booking system</li><li>Sending links and reminders automatically</li><li>Taking payment or confirming extras in the app</li><li>Guests uploading photos to the lodge</li></ul></div>
+    <div class="story-head rv">
+      <p class="kicker">Getting it for your lodge</p>
+      <h2 class="h2" id="w1">Live for your lodge once you send me this.</h2>
+      <p class="lede">The app runs on one shared engine, with one content file per lodge. Setting up your lodge means adding your content, not building an app from scratch. It is all done remotely, wherever you are.</p>
+    </div>
+    <div class="cols-2">
+      <div class="rv">
+        <h3 class="h3" style="margin-bottom:14px">What I need from you</h3>
+        <ul class="ticks">
+          <li>Your lodge's name, logo and colours</li>
+          <li>Photos of your rooms, your lodge and your wildlife</li>
+          <li>Check-in and check-out times, Wi-Fi, gate access and house rules</li>
+          <li>Your host's first name, and the WhatsApp number, phone and email guests should use</li>
+          <li>Where you are, and the airports and routes your guests use</li>
+          <li>Your favourite places nearby to eat, shop and visit</li>
+          <li>The extras you offer, with prices</li>
+          <li>The animals and birds guests see with you, or what is around you if you are not in the bush</li>
+          <li>The languages your guests speak</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3 class="h3" style="margin-bottom:6px">What happens next</h3>
+        <ol class="steps" style="grid-template-columns:1fr;gap:26px;margin-top:30px">
+          <li><h3>I set up your lodge</h3><p>Your name, photos, places, wildlife, extras and wording go into your own version of the app.</p></li>
+          <li><h3>You try it as a guest</h3><p>You get a link, open it on your own phone, and tell me what to change.</p></li>
+          <li><h3>It is live</h3><p>You create a link for each booking with the guest's name and dates, and send it. Questions and requests reach you on WhatsApp, already written out.</p></li>
+        </ol>
+      </div>
+    </div>
+    <div class="cta-row rv" style="margin-top:44px">
+      <a class="btn arrow" href="#enquire" data-track="mystay-golive">Start with a sample for your lodge</a>
+      <a class="btn btn-line" href="/stay/?demo=1" target="_blank" rel="noopener" data-track="mystay-golive-demo">Try the live demo</a>
     </div>
   </div>
 </section>
 
-<section class="sec" aria-labelledby="q1">
+<section class="sec alt" aria-labelledby="q1">
   <div class="wrap">
     <p class="kicker">Questions lodge owners ask</p>
     <h2 class="h2" id="q1">Straight answers.</h2>
     <div class="faq">
+      <details><summary>What is a guest app for a lodge?</summary><p>It is a personal guide to the stay that each guest opens from a link you send after they book. It replaces the PDF, the welcome email and most of the WhatsApp questions with one place that covers getting to you, the stay itself and the trip home, under your lodge's own name.</p></details>
+      <details><summary>How do I get My stay for my lodge?</summary><p>Send me your lodge's name and website and I'll set up a sample you can open on your phone. When you want it for real guests, you send the details listed above, I set up your lodge, you check it as a guest would, and it is live.</p></details>
       <details><summary>Do guests have to download anything?</summary><p>No. You send the guest a personal link. It opens in the phone's browser, and they can add it to their home screen if they like.</p></details>
       <details><summary>Does it work without signal?</summary><p>Once it has been opened, yes. The guides, checklists, lodge details, emergency numbers, passport and photos all keep working. The weather shows the last saved forecast and says so. The map and sending messages need signal.</p></details>
-      <details><summary>Does it connect to my booking system?</summary><p>Not yet. Today you create each guest's link by hand in an owner screen. Importing bookings automatically needs an integration with your booking system, which I would scope with you.</p></details>
+      <details><summary>Which languages does it support?</summary><p>English and German today, switched in one tap. Other languages, such as French, Dutch, Spanish, Italian and Chinese, are added for a lodge on request. Messages to you are always written in English.</p></details>
+      <details><summary>Does it connect to my booking system?</summary><p>Not yet. Today you create each guest's link in an owner screen, with their name and dates. Importing bookings automatically needs an integration with your booking system, which I would scope with you.</p></details>
       <details><summary>Does it take payments?</summary><p>No. Extras are requests. They open in the guest's WhatsApp or email, and you confirm the price and availability there.</p></details>
       <details><summary>What happens to guests' photos?</summary><p>They stay on the guest's own phone and are private by default. A guest can choose to send you a photo from their phone, and separately say whether you may use it in marketing. Photos of sensitive species are never offered for marketing, and the app never records where one was seen.</p></details>
-      <details><summary>What does it cost?</summary><p>There is no set price yet. After a first conversation you get a defined scope, price and timeline in writing, with optional monthly support after launch.</p></details>
-      <details><summary>We are not a safari lodge. Does it still fit?</summary><p>Yes. The wildlife passport becomes a guide to whatever is around you: walks, wine farms, beaches, birds. The rest of the stay works the same way.</p></details>
+      <details><summary>What does it cost?</summary><p>It is quoted per lodge. After a first conversation you get a defined scope, price and timeline in writing, with optional monthly support after launch. The sample for your lodge costs nothing.</p></details>
+      <details><summary>We are not in South Africa. Can you set it up for us?</summary><p>Yes. My stay is set up remotely for lodges, camps and boutique stays anywhere. The demo shows a lodge in South Africa, but your version carries your own area: your airports and routes, your places, your wildlife and your emergency numbers. Invoicing is available in USD, EUR or ZAR.</p></details>
+      <details><summary>We are not a safari lodge. Does it still fit?</summary><p>Yes. It suits guesthouses, boutique hotels, tented camps and villas too. The wildlife passport becomes a guide to whatever is around you: walks, wine farms, beaches, birds. The rest of the stay works the same way.</p></details>
     </div>
+    <p class="note-line">My stay is built by Dave at apploading.co, an independent software builder working with lodges and businesses worldwide. See <a href="/services/">what else I build</a> or <a href="/work/">more of my work</a>.</p>
   </div>
 </section>
 
@@ -293,12 +453,12 @@
   <div class="wrap enq-grid">
     <div class="rv">
       <p class="kicker">See it for your lodge</p>
-      <h2 class="h2" id="enq-h">Get a working sample set up for your lodge.</h2>
+      <h2 class="h2" id="enq-h">Get My stay set up for your lodge.</h2>
       <p class="lede">Send me your lodge's name and website. I'll set up the guest app with your name and colours, your directions and drive times, your forecast and the places around you, and send you a link you can open on your phone. The sample costs nothing.</p>
       <ol class="next-list">
         <li>I read your message myself and reply, usually the same business day.</li>
         <li>You get a link to your own sample, to try as a guest would.</li>
-        <li>If you want it for real guests, you get a defined scope, price and timeline in writing. If it is not a fit, I'll say so.</li>
+        <li>When you want it for your guests, you get the scope, price and timeline in writing, and I set up the rest of your lodge.</li>
       </ol>
       <p class="mail-line">Prefer email? Write to <a href="mailto:dave@apploading.co">dave@apploading.co</a>.</p>
     </div>
@@ -323,7 +483,7 @@
       <p>Dave, independent builder. Cape Town, South Africa. Working with businesses locally and internationally.</p>
       <p><a href="mailto:dave@apploading.co">dave@apploading.co</a></p>
     </div>
-    <ul aria-label="Pages"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/work/">Work</a></li><li><a href="/guest-app-for-lodges/">Customer apps</a></li><li><a href="/about/">About and contact</a></li></ul>
+    <ul aria-label="Pages"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/work/">Work</a></li><li><a href="/my-stay/">Customer apps</a></li><li><a href="/about/">About and contact</a></li></ul>
     <p>&copy; 2026 apploading.co</p>
   </div>
 </footer>
